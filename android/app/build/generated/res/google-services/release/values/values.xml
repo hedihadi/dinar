@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">13392692448-namlk9aj1eaq7758off6r9bi37v3kmu3.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://dinarikurd-default-rtdb.europe-west1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">13392692448</string>
+    <string name="google_api_key" translatable="false">AIzaSyDKeqhMOnVbxF0ha6CSqV-n6GwrMV-eOdY</string>
+    <string name="google_app_id" translatable="false">1:13392692448:android:208db1877f8f8d5444bc85</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDKeqhMOnVbxF0ha6CSqV-n6GwrMV-eOdY</string>
+    <string name="google_storage_bucket" translatable="false">dinarikurd.appspot.com</string>
+    <string name="project_id" translatable="false">dinarikurd</string>
+</resources>

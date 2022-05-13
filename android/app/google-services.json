@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "186782020118",
+    "project_id": "rustwipe-71ce4",
+    "storage_bucket": "rustwipe-71ce4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186782020118:android:408a2c83f4abfab004bb37",
+        "android_client_info": {
+          "package_name": "com.hedihadi.rustwipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186782020118-7lshtp5vdvokn71jh3etpuoota4jce89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIBDEywy5KSMFGwSY44xpIWxKRu9ainvU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186782020118-7lshtp5vdvokn71jh3etpuoota4jce89.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
