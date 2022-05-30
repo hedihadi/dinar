@@ -4,7 +4,7 @@
     "type": "PROCESSED_RES",
     "kind": "Directory"
   },
-  "applicationId": "com.hedihadi.rustwipe",
+  "applicationId": "com.hedihadi.rustcompanion",
   "variantName": "processDebugResources",
   "elements": [
     {

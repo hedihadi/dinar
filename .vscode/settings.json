@@ -1,4 +1,4 @@
 {
-    "dart.flutterAdditionalArgs": [
-    ]
+    "dart.lineLength": 150,
+    "dart.flutterAdditionalArgs": []
 }

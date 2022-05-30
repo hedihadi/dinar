@@ -1,4 +1,4 @@
-name: rustwipe
+name: RustCompanion
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -30,7 +30,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   intl: ^0.17.0
   http: ^0.13.3
-
+  auto_start_flutter: ^0.0.1
+  permission_handler: ^9.2.0
+  disable_battery_optimization: ^1.1.0+1
+  expansion_tile_card: ^2.0.0
   cloud_firestore: ^2.2.2
   path_provider: ^2.0.2
   cached_network_image: ^3.0.0
@@ -48,6 +51,9 @@ dependencies:
   firebase_messaging: ^11.2.5
   connectivity_plus: ^2.2.1
   flutter_tags: ^0.4.9+1
+  pull_to_refresh: ^2.0.0
+  provider: ^6.0.2
+  font_awesome_flutter: ^10.1.0
 
 dev_dependencies:
   firebase_core: ^1.3.0
@@ -66,16 +72,33 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   fonts:
-    - family: uniqaidar
+    - family: RobotoMono
       fonts:
-        - asset: fonts/UniQAIDAR_Subtitle_010.ttf
-    - family: roboto
+        - asset: fonts/RobotoMono-Light.ttf
+          weight: 300
+        - asset: fonts/RobotoMono-Regular.ttf
+          weight: 400
+        - asset: fonts/RobotoMono-Bold.ttf
+          weight: 600
+        - asset: fonts/RobotoMono-SemiBold.ttf
+          weight: 500
+
+    - family: Roboto
       fonts:
+        - asset: fonts/Roboto-Light.ttf
+          weight: 300
         - asset: fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 600
+    - family: BebasNeue
+      fonts:
+        - asset: fonts/BebasNeue-Regular.ttf
+
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/countries/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

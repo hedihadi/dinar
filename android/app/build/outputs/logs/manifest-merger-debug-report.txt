@@ -1,24 +1,27 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:1:1-80:12
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:1:1-80:12
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:1:1-80:12
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:1:1-80:12
-MERGED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:1:1-80:12
-MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-46:12
-MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:sqflite] F:\Projects\Flutter\RustWipe\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-28:12
-MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
-MERGED from [:path_provider] F:\Projects\Flutter\RustWipe\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:shared_preferences_android] F:\Projects\Flutter\RustWipe\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:android_alarm_manager_plus] F:\Projects\Flutter\RustWipe\build\android_alarm_manager_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\7be9705e85bcf5ac68a916644c6db1e4\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:1:1-78:12
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:1:1-78:12
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:1:1-78:12
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:1:1-78:12
+MERGED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:1:1-78:12
+MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-46:12
+MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:auto_start_flutter] F:\Projects\Flutter\RustWipe - Copy\build\auto_start_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] F:\Projects\Flutter\RustWipe - Copy\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-28:12
+MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:path_provider] F:\Projects\Flutter\RustWipe - Copy\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe - Copy\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:shared_preferences_android] F:\Projects\Flutter\RustWipe - Copy\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:permission_handler_android] F:\Projects\Flutter\RustWipe - Copy\build\permission_handler_android\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:android_alarm_manager_plus] F:\Projects\Flutter\RustWipe - Copy\build\android_alarm_manager_plus\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.judemanutd:autostarter:1.0.8] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\058d5f8ea7aebb9fe26e7e6bf4d301dc\jetified-autostarter-1.0.8\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1ebc363f3f7a1123bd8605e25f5793c4\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:17:1-58:12
 MERGED from [com.google.firebase:firebase-firestore:24.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5cfedb3c23ba1b411eca1c0b402ca3e0\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:2:1-26:12
@@ -31,19 +34,33 @@ MERGED from [com.google.firebase:firebase-auth-interop:19.0.2] C:\Users\Hedi\.gr
 MERGED from [com.google.firebase:firebase-appcheck-interop:16.0.0-beta04] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5a5d65fbb211a91006dfee9352ac36d7\jetified-firebase-appcheck-interop-16.0.0-beta04\AndroidManifest.xml:15:1-26:12
 MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d36a54060ae3868ffab4f57be8f88a93\jetified-firebase-installations-17.0.0\AndroidManifest.xml:2:1-24:12
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\81bdf2e2b66573dceb7529a91162dd79\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
-MERGED from [androidx.media:media:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\28038c044dff7e6fdb50d85d15de7a3f\media-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-ads:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec2b72fe9381afbff820eb8149aa7d0f\jetified-play-services-ads-20.1.0\AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\cd4d9425d6ac4630fd588074f10827b7\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\06995dfbd2c464e1b2c24b5e0deeed8a\material-1.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.afollestad.material-dialogs:commons:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\7f14a9a2527531da123fb48e5730fb88\jetified-commons-0.9.6.0\AndroidManifest.xml:2:1-14:12
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\09e0dbe4e567ddac39d90c4257c55296\jetified-core-0.9.6.0\AndroidManifest.xml:2:1-15:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c2ec927212e21435fa33450440ab510b\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\fd45f464676037140c6d59b6bec5ef07\jetified-library-1.4.2\AndroidManifest.xml:6:1-16:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\29aeb1befecc216a1055199d5682194c\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\20da3906343d45dd80dc52d3f928d204\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5cc42a1361ccbb08f9e90fd3df5b8392\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:17:1-46:12
 MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\cf30fb90edb111e2e8a1489393220763\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d7a88c89332258b0813597e6d838913\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-ads:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec2b72fe9381afbff820eb8149aa7d0f\jetified-play-services-ads-20.1.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e7bccfb92757bbed9d3124eaf61eb935\browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e52d5f229bd85336d69204474da3f363\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e4e4f35ed48a1e108643b890227ec12f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3c68d448c638b0174dbb31be7a097ce2\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\457cf6f8946150c7b7e6720511a2f6f9\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\44c0dd7f1cf7462c0774519ea0589052\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\20f34df5f7c01f8c20e9f7e7835a3c51\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3dc26f715835e83427630b57eadc39b0\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.google.firebase:firebase-database-collection:18.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\aec4fb74203015ee5ecd6c90ce96da44\jetified-firebase-database-collection-18.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0e8e6a89765928c1ad2decc9a07f4903\jetified-play-services-base-17.1.0\AndroidManifest.xml:17:1-29:12
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec6fef4d05c3a4c751a351d199253ecc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\355d125c910fa3933c29a6c72a7590bc\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:17:1-66:12
 MERGED from [com.google.android.gms:play-services-ads-base:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\9c19934445f98ab83eee64eefea0ad59\jetified-play-services-ads-base-20.1.0\AndroidManifest.xml:2:1-9:12
@@ -52,40 +69,40 @@ MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\User
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2e23bd833ef2500d5e3c61d15873d2f1\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0ac89ad7aa7db7a62cedb41432ee0737\jetified-play-services-measurement-base-20.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\573deec374b3e468b907e59b98dd06af\jetified-play-services-basement-17.6.0\AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e7bccfb92757bbed9d3124eaf61eb935\browser-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\deb7fe2ccd18a53d072c27ed0b78643f\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\4b4b5b8b23d6d10dd84f36af3671ff37\jetified-activity-1.2.4\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5b245b05b51e6a042c2097c2592ae817\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e52d5f229bd85336d69204474da3f363\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ffc3792792dac9d7da941709d51c1939\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e4e4f35ed48a1e108643b890227ec12f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5484caa0ac3e8fa852b55b2b596f4978\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\926450b8b78942692b2e4da60708c61e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5ae5770f2baf8f76e1be7d3ca25c47d4\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\28038c044dff7e6fdb50d85d15de7a3f\media-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\baae000ce22e2c9cd661ee828880cb9d\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\14c94da428e9becc5648829f68fbf89c\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e208bc2b6a09c29cb7038bcdab9a48d4\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\40bc3ac06850167f1f677e954717ee05\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d9f0b52002621955f3cc279a84766a31\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da8817a1c3896e06095c0857bbbe29cd\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:17:1-125:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c1df1616dddec92e1c2dfb6c6d3a0319\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d0df6e92b31eaff193d1eb243cc6afc2\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d9f0b52002621955f3cc279a84766a31\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da8817a1c3896e06095c0857bbbe29cd\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b758f8baf51eb789e1f64101ed7f216a\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\4eacad781ee94dd028f506f0dd272c1a\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\327bf72083b36e3aaaf91cd8e911faa4\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\60a4c936847f475149c5c18e3e933bf2\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\838aa2309a1589f1fb758bd50c0e5a68\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2b22cf52f1fa4e349a4c7fffe18f3fdd\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d22331b91562bebf594323de275c6be\room-runtime-2.1.0\AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.core:core:1.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b034dae9f9238607a1261d0b3c8632c9\core-1.6.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3c68d448c638b0174dbb31be7a097ce2\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\457cf6f8946150c7b7e6720511a2f6f9\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\44c0dd7f1cf7462c0774519ea0589052\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5ae5770f2baf8f76e1be7d3ca25c47d4\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\497a96bbdfc2d024aeecd48f229593d6\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\867073c29e44b88a5a6a0154b73c428b\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\97985c246010be4d24c9bc5008b7a1e4\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.7.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3718dd2b71fdcd2a2c1c1de942490c35\core-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\223cceb06e873ebbef33ea1c1b9b2619\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1b0ca3079b1e2e08b4eb7b081269cb85\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5efb354813b55015d4b8222e327897e3\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c539712a87e5880365b46846d2d26887\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e239aae55cca200c9a1f6ed6d23364e9\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b7701fc4230c674b949ef9ece9e102f3\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\497a96bbdfc2d024aeecd48f229593d6\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3ef43fa4aba3aca4541ddb1fc9d6025f\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da1f4672ace4ab2890cc445c413c1090\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\867073c29e44b88a5a6a0154b73c428b\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ed7e04515e863a23563956d477f9c800\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c5d7d7d593b9633bd64c5c08bbcea1f7\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\592633eb87411ac8b9775656b174281e\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\9790fb9ca19b16c4b5042e8dc820264a\print-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -95,97 +112,99 @@ MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\Hedi\.gradle\caches\transform
 MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\fe784e4aac865cf134bed8ed948bf095\jetified-threetenabp-1.2.3\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\11b3e9e735dcae59d57af91b8d1e66e6\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0061fe068a5109711a2ad4545c26ec5a\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml:1:1-11:12
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml:1:1-11:12
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml:1:1-11:12
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml:1:1-11:12
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml:1:1-11:12
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml:1:1-11:12
 	package
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:2:5-36
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:2:5-41
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:1:1-80:12
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:1:1-78:12
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml
 	android:versionCode
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:1:1-80:12
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:1:1-78:12
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:3:5-80
-MERGED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:3:5-80
-MERGED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:3:5-80
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:3:5-80
+MERGED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:3:5-80
+MERGED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:3:5-80
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-81
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:27:5-81
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:27:5-81
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:3:22-78
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:3:22-78
 uses-permission#android.permission.WAKE_LOCK
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:4:5-67
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-68
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-68
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:4:5-67
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-68
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-68
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\de748771f8a6a21a37fd3239c6230b6e\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\de748771f8a6a21a37fd3239c6230b6e\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:25:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:9:5-68
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:9:5-68
 MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:9:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2e23bd833ef2500d5e3c61d15873d2f1\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2e23bd833ef2500d5e3c61d15873d2f1\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:25:5-68
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:25:5-68
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:4:22-65
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:4:22-65
 uses-permission#android.permission.SCHEDULE_EXACT_ALARM
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:5:5-78
-MERGED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:5:5-78
-MERGED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:5:5-78
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:5:5-78
+MERGED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:5:5-78
+MERGED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:5:5-78
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:5:22-76
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:5:22-76
 queries
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:6:1-11:13
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:6:1-11:13
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:27:5-43:15
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:27:5-43:15
 intent#action:name:android.intent.action.VIEW+data:scheme:https
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:7:3-10:12
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:7:3-10:12
 action#android.intent.action.VIEW
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:8:5-57
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:8:5-57
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:8:13-54
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:8:13-54
 data
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:9:5-36
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:9:5-36
 	android:scheme
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:9:11-33
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:9:11-33
 application
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:12:4-78:19
-MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-17:19
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-17:19
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-44:19
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-44:19
-MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-26:19
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-26:19
-MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
-MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-13:19
-MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-13:19
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:12:4-76:19
+MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-17:19
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-17:19
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-26:19
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-26:19
+MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-13:19
+MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-13:19
+MERGED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-20
+MERGED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-20
 MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1ebc363f3f7a1123bd8605e25f5793c4\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1ebc363f3f7a1123bd8605e25f5793c4\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:27:5-56:19
@@ -208,20 +227,30 @@ MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.g
 MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d36a54060ae3868ffab4f57be8f88a93\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\81bdf2e2b66573dceb7529a91162dd79\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\81bdf2e2b66573dceb7529a91162dd79\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\06995dfbd2c464e1b2c24b5e0deeed8a\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\06995dfbd2c464e1b2c24b5e0deeed8a\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [com.afollestad.material-dialogs:commons:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\7f14a9a2527531da123fb48e5730fb88\jetified-commons-0.9.6.0\AndroidManifest.xml:12:5-20
+MERGED from [com.afollestad.material-dialogs:commons:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\7f14a9a2527531da123fb48e5730fb88\jetified-commons-0.9.6.0\AndroidManifest.xml:12:5-20
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\09e0dbe4e567ddac39d90c4257c55296\jetified-core-0.9.6.0\AndroidManifest.xml:13:5-20
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\09e0dbe4e567ddac39d90c4257c55296\jetified-core-0.9.6.0\AndroidManifest.xml:13:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c2ec927212e21435fa33450440ab510b\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c2ec927212e21435fa33450440ab510b\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:28:5-44:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\cf30fb90edb111e2e8a1489393220763\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\cf30fb90edb111e2e8a1489393220763\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\20f34df5f7c01f8c20e9f7e7835a3c51\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\20f34df5f7c01f8c20e9f7e7835a3c51\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
 MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0e8e6a89765928c1ad2decc9a07f4903\jetified-play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0e8e6a89765928c1ad2decc9a07f4903\jetified-play-services-base-17.1.0\AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec6fef4d05c3a4c751a351d199253ecc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec6fef4d05c3a4c751a351d199253ecc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:28:5-29:19
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:28:5-29:19
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\355d125c910fa3933c29a6c72a7590bc\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\355d125c910fa3933c29a6c72a7590bc\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:45:5-64:19
@@ -234,146 +263,156 @@ MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0ac89ad7aa7db7a62cedb41432ee0737\jetified-play-services-measurement-base-20.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\573deec374b3e468b907e59b98dd06af\jetified-play-services-basement-17.6.0\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\573deec374b3e468b907e59b98dd06af\jetified-play-services-basement-17.6.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\926450b8b78942692b2e4da60708c61e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\926450b8b78942692b2e4da60708c61e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:29:5-123:19
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:29:5-123:19
 MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d22331b91562bebf594323de275c6be\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
 MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d22331b91562bebf594323de275c6be\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
-MERGED from [androidx.core:core:1.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b034dae9f9238607a1261d0b3c8632c9\core-1.6.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b034dae9f9238607a1261d0b3c8632c9\core-1.6.0\AndroidManifest.xml:24:5-89
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.core:core:1.7.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3718dd2b71fdcd2a2c1c1de942490c35\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3718dd2b71fdcd2a2c1c1de942490c35\core-1.7.0\AndroidManifest.xml:24:5-89
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\497a96bbdfc2d024aeecd48f229593d6\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\497a96bbdfc2d024aeecd48f229593d6\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\fe784e4aac865cf134bed8ed948bf095\jetified-threetenabp-1.2.3\AndroidManifest.xml:7:5-20
 MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\fe784e4aac865cf134bed8ed948bf095\jetified-threetenabp-1.2.3\AndroidManifest.xml:7:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b034dae9f9238607a1261d0b3c8632c9\core-1.6.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.7.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3718dd2b71fdcd2a2c1c1de942490c35\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:13:9-33
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:13:9-39
 	android:icon
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:14:9-43
 service#eu.acme.service.FireBaseInstanceIdService
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:15:5-21:15
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:15:5-21:15
 	android:exported
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:17:9-33
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:17:9-33
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:16:9-65
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:16:9-65
 intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:18:9-20:25
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:18:9-20:25
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:19:13-75
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:19:13-75
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:19:21-73
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:19:21-73
 service#dev.fluttercommunity.plus.androidalarmmanager.AlarmService
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:22:9-25:31
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:22:9-25:31
 	android:exported
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:25:5-29
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:25:5-29
 	android:permission
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:24:5-61
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:24:5-61
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:23:5-78
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:23:5-78
 receiver#dev.fluttercommunity.plus.androidalarmmanager.AlarmBroadcastReceiver
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:26:1-28:31
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:26:1-28:31
 	android:exported
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:28:5-29
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:28:5-29
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:27:5-88
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:27:5-88
 receiver#dev.fluttercommunity.plus.androidalarmmanager.RebootBroadcastReceiver
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:29:1-36:12
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:29:1-36:12
 	android:enabled
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:31:5-28
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:31:5-28
 	android:exported
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:32:5-29
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:32:5-29
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:30:5-89
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:30:5-89
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:33:5-35:21
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:33:5-35:21
 action#android.intent.action.BOOT_COMPLETED
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:34:9-71
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:34:9-71
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:34:17-68
-activity#com.hedihadi.rustwipe.MainActivity
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:37:9-69:20
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:34:17-68
+activity#com.hedihadi.rustcompanion.MainActivity
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:37:9-67:20
 	android:launchMode
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:39:13-43
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:39:13-43
 	android:hardwareAccelerated
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:42:13-47
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:42:13-47
 	android:windowSoftInputMode
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:44:13-55
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:44:13-55
 	android:exported
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:43:13-36
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:43:13-36
 	android:configChanges
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:41:13-163
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:41:13-163
 	android:theme
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:40:13-47
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:40:13-47
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:38:13-41
-meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:49:13-51:69
-	android:value
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:51:13-67
-	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:50:13-69
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:38:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:52:13-55:17
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:50:13-53:17
 	android:resource
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:54:15-52
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:52:15-52
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:53:15-70
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:51:15-70
 meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:61:13-64:17
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:59:13-62:17
 	android:resource
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:63:15-61
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:61:15-61
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:62:15-79
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:60:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:65:13-68:29
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:63:13-66:29
 action#android.intent.action.MAIN
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:66:17-68
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:64:17-68
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:66:25-66
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:64:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:67:17-76
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:65:17-76
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:67:27-74
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:65:27-74
 meta-data#flutterEmbedding
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:72:9-74:33
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:70:9-72:33
 	android:value
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:74:13-30
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:72:13-30
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml:73:13-44
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:71:13-44
+meta-data#com.google.android.gms.ads.APPLICATION_ID
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:73:9-75:69
+	android:value
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:75:13-67
+	android:name
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml:74:13-69
 uses-sdk
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml
-MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] F:\Projects\Flutter\RustWipe\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] F:\Projects\Flutter\RustWipe\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] F:\Projects\Flutter\RustWipe\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider] F:\Projects\Flutter\RustWipe\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] F:\Projects\Flutter\RustWipe\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] F:\Projects\Flutter\RustWipe\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:android_alarm_manager_plus] F:\Projects\Flutter\RustWipe\build\android_alarm_manager_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:android_alarm_manager_plus] F:\Projects\Flutter\RustWipe\build\android_alarm_manager_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\7be9705e85bcf5ac68a916644c6db1e4\multidex-2.0.0\AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\7be9705e85bcf5ac68a916644c6db1e4\multidex-2.0.0\AndroidManifest.xml:20:5-43
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml
+MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:auto_start_flutter] F:\Projects\Flutter\RustWipe - Copy\build\auto_start_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:auto_start_flutter] F:\Projects\Flutter\RustWipe - Copy\build\auto_start_flutter\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] F:\Projects\Flutter\RustWipe - Copy\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] F:\Projects\Flutter\RustWipe - Copy\build\sqflite\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] F:\Projects\Flutter\RustWipe - Copy\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider] F:\Projects\Flutter\RustWipe - Copy\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe - Copy\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe - Copy\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] F:\Projects\Flutter\RustWipe - Copy\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] F:\Projects\Flutter\RustWipe - Copy\build\shared_preferences_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] F:\Projects\Flutter\RustWipe - Copy\build\permission_handler_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] F:\Projects\Flutter\RustWipe - Copy\build\permission_handler_android\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:android_alarm_manager_plus] F:\Projects\Flutter\RustWipe - Copy\build\android_alarm_manager_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:android_alarm_manager_plus] F:\Projects\Flutter\RustWipe - Copy\build\android_alarm_manager_plus\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [com.github.judemanutd:autostarter:1.0.8] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\058d5f8ea7aebb9fe26e7e6bf4d301dc\jetified-autostarter-1.0.8\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.judemanutd:autostarter:1.0.8] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\058d5f8ea7aebb9fe26e7e6bf4d301dc\jetified-autostarter-1.0.8\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1ebc363f3f7a1123bd8605e25f5793c4\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1ebc363f3f7a1123bd8605e25f5793c4\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:20:5-44
@@ -398,16 +437,48 @@ MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.g
 MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d36a54060ae3868ffab4f57be8f88a93\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\81bdf2e2b66573dceb7529a91162dd79\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\81bdf2e2b66573dceb7529a91162dd79\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\28038c044dff7e6fdb50d85d15de7a3f\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\28038c044dff7e6fdb50d85d15de7a3f\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-ads:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec2b72fe9381afbff820eb8149aa7d0f\jetified-play-services-ads-20.1.0\AndroidManifest.xml:21:5-23:52
-MERGED from [com.google.android.gms:play-services-ads:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec2b72fe9381afbff820eb8149aa7d0f\jetified-play-services-ads-20.1.0\AndroidManifest.xml:21:5-23:52
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\cd4d9425d6ac4630fd588074f10827b7\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\cd4d9425d6ac4630fd588074f10827b7\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\06995dfbd2c464e1b2c24b5e0deeed8a\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\06995dfbd2c464e1b2c24b5e0deeed8a\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.afollestad.material-dialogs:commons:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\7f14a9a2527531da123fb48e5730fb88\jetified-commons-0.9.6.0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.afollestad.material-dialogs:commons:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\7f14a9a2527531da123fb48e5730fb88\jetified-commons-0.9.6.0\AndroidManifest.xml:8:5-10:41
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\09e0dbe4e567ddac39d90c4257c55296\jetified-core-0.9.6.0\AndroidManifest.xml:8:5-11:75
+MERGED from [com.afollestad.material-dialogs:core:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\09e0dbe4e567ddac39d90c4257c55296\jetified-core-0.9.6.0\AndroidManifest.xml:8:5-11:75
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c2ec927212e21435fa33450440ab510b\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c2ec927212e21435fa33450440ab510b\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\fd45f464676037140c6d59b6bec5ef07\jetified-library-1.4.2\AndroidManifest.xml:12:5-14:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\fd45f464676037140c6d59b6bec5ef07\jetified-library-1.4.2\AndroidManifest.xml:12:5-14:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\29aeb1befecc216a1055199d5682194c\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\29aeb1befecc216a1055199d5682194c\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\20da3906343d45dd80dc52d3f928d204\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\20da3906343d45dd80dc52d3f928d204\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5cc42a1361ccbb08f9e90fd3df5b8392\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5cc42a1361ccbb08f9e90fd3df5b8392\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\cf30fb90edb111e2e8a1489393220763\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\cf30fb90edb111e2e8a1489393220763\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d7a88c89332258b0813597e6d838913\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d7a88c89332258b0813597e6d838913\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec2b72fe9381afbff820eb8149aa7d0f\jetified-play-services-ads-20.1.0\AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.android.gms:play-services-ads:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec2b72fe9381afbff820eb8149aa7d0f\jetified-play-services-ads-20.1.0\AndroidManifest.xml:21:5-23:52
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e7bccfb92757bbed9d3124eaf61eb935\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e7bccfb92757bbed9d3124eaf61eb935\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e52d5f229bd85336d69204474da3f363\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e52d5f229bd85336d69204474da3f363\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e4e4f35ed48a1e108643b890227ec12f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e4e4f35ed48a1e108643b890227ec12f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3c68d448c638b0174dbb31be7a097ce2\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3c68d448c638b0174dbb31be7a097ce2\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\457cf6f8946150c7b7e6720511a2f6f9\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\457cf6f8946150c7b7e6720511a2f6f9\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\44c0dd7f1cf7462c0774519ea0589052\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\44c0dd7f1cf7462c0774519ea0589052\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\20f34df5f7c01f8c20e9f7e7835a3c51\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
@@ -420,10 +491,6 @@ MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hedi\.gr
 MERGED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0e8e6a89765928c1ad2decc9a07f4903\jetified-play-services-base-17.1.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec6fef4d05c3a4c751a351d199253ecc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec6fef4d05c3a4c751a351d199253ecc\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\93c9bebe5eb4b9aade28142be46f16cf\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\355d125c910fa3933c29a6c72a7590bc\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\355d125c910fa3933c29a6c72a7590bc\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:20:5-44
@@ -440,60 +507,52 @@ MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0ac89ad7aa7db7a62cedb41432ee0737\jetified-play-services-measurement-base-20.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\573deec374b3e468b907e59b98dd06af\jetified-play-services-basement-17.6.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\573deec374b3e468b907e59b98dd06af\jetified-play-services-basement-17.6.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e7bccfb92757bbed9d3124eaf61eb935\browser-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e7bccfb92757bbed9d3124eaf61eb935\browser-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\deb7fe2ccd18a53d072c27ed0b78643f\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\deb7fe2ccd18a53d072c27ed0b78643f\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\4b4b5b8b23d6d10dd84f36af3671ff37\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.activity:activity:1.2.4] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\4b4b5b8b23d6d10dd84f36af3671ff37\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5b245b05b51e6a042c2097c2592ae817\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5b245b05b51e6a042c2097c2592ae817\jetified-appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e52d5f229bd85336d69204474da3f363\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e52d5f229bd85336d69204474da3f363\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ffc3792792dac9d7da941709d51c1939\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ffc3792792dac9d7da941709d51c1939\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e4e4f35ed48a1e108643b890227ec12f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e4e4f35ed48a1e108643b890227ec12f\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5484caa0ac3e8fa852b55b2b596f4978\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5484caa0ac3e8fa852b55b2b596f4978\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\926450b8b78942692b2e4da60708c61e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\926450b8b78942692b2e4da60708c61e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5ae5770f2baf8f76e1be7d3ca25c47d4\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5ae5770f2baf8f76e1be7d3ca25c47d4\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\28038c044dff7e6fdb50d85d15de7a3f\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\28038c044dff7e6fdb50d85d15de7a3f\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\baae000ce22e2c9cd661ee828880cb9d\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\baae000ce22e2c9cd661ee828880cb9d\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\14c94da428e9becc5648829f68fbf89c\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\14c94da428e9becc5648829f68fbf89c\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e208bc2b6a09c29cb7038bcdab9a48d4\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e208bc2b6a09c29cb7038bcdab9a48d4\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\40bc3ac06850167f1f677e954717ee05\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\40bc3ac06850167f1f677e954717ee05\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d9f0b52002621955f3cc279a84766a31\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d9f0b52002621955f3cc279a84766a31\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da8817a1c3896e06095c0857bbbe29cd\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da8817a1c3896e06095c0857bbbe29cd\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:21:5-23:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c1df1616dddec92e1c2dfb6c6d3a0319\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c1df1616dddec92e1c2dfb6c6d3a0319\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d0df6e92b31eaff193d1eb243cc6afc2\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d0df6e92b31eaff193d1eb243cc6afc2\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d9f0b52002621955f3cc279a84766a31\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d9f0b52002621955f3cc279a84766a31\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da8817a1c3896e06095c0857bbbe29cd\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da8817a1c3896e06095c0857bbbe29cd\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b758f8baf51eb789e1f64101ed7f216a\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b758f8baf51eb789e1f64101ed7f216a\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\4eacad781ee94dd028f506f0dd272c1a\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\4eacad781ee94dd028f506f0dd272c1a\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\327bf72083b36e3aaaf91cd8e911faa4\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\327bf72083b36e3aaaf91cd8e911faa4\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\60a4c936847f475149c5c18e3e933bf2\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\60a4c936847f475149c5c18e3e933bf2\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\838aa2309a1589f1fb758bd50c0e5a68\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\838aa2309a1589f1fb758bd50c0e5a68\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2b22cf52f1fa4e349a4c7fffe18f3fdd\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2b22cf52f1fa4e349a4c7fffe18f3fdd\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d22331b91562bebf594323de275c6be\room-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d22331b91562bebf594323de275c6be\room-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b034dae9f9238607a1261d0b3c8632c9\core-1.6.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b034dae9f9238607a1261d0b3c8632c9\core-1.6.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3c68d448c638b0174dbb31be7a097ce2\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3c68d448c638b0174dbb31be7a097ce2\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\457cf6f8946150c7b7e6720511a2f6f9\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\457cf6f8946150c7b7e6720511a2f6f9\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\44c0dd7f1cf7462c0774519ea0589052\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\44c0dd7f1cf7462c0774519ea0589052\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5ae5770f2baf8f76e1be7d3ca25c47d4\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5ae5770f2baf8f76e1be7d3ca25c47d4\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\497a96bbdfc2d024aeecd48f229593d6\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\497a96bbdfc2d024aeecd48f229593d6\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\867073c29e44b88a5a6a0154b73c428b\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\867073c29e44b88a5a6a0154b73c428b\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\97985c246010be4d24c9bc5008b7a1e4\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\97985c246010be4d24c9bc5008b7a1e4\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3718dd2b71fdcd2a2c1c1de942490c35\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3718dd2b71fdcd2a2c1c1de942490c35\core-1.7.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\223cceb06e873ebbef33ea1c1b9b2619\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\223cceb06e873ebbef33ea1c1b9b2619\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1b0ca3079b1e2e08b4eb7b081269cb85\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
@@ -502,12 +561,20 @@ MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Hedi\.gradle\caches\
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5efb354813b55015d4b8222e327897e3\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c539712a87e5880365b46846d2d26887\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c539712a87e5880365b46846d2d26887\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e239aae55cca200c9a1f6ed6d23364e9\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\e239aae55cca200c9a1f6ed6d23364e9\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b7701fc4230c674b949ef9ece9e102f3\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\b7701fc4230c674b949ef9ece9e102f3\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\497a96bbdfc2d024aeecd48f229593d6\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\497a96bbdfc2d024aeecd48f229593d6\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3ef43fa4aba3aca4541ddb1fc9d6025f\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\3ef43fa4aba3aca4541ddb1fc9d6025f\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da1f4672ace4ab2890cc445c413c1090\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\da1f4672ace4ab2890cc445c413c1090\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\867073c29e44b88a5a6a0154b73c428b\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\867073c29e44b88a5a6a0154b73c428b\jetified-lifecycle-service-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ed7e04515e863a23563956d477f9c800\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ed7e04515e863a23563956d477f9c800\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c5d7d7d593b9633bd64c5c08bbcea1f7\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\c5d7d7d593b9633bd64c5c08bbcea1f7\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\592633eb87411ac8b9775656b174281e\documentfile-1.0.0\AndroidManifest.xml:20:5-44
@@ -526,24 +593,26 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Hed
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\11b3e9e735dcae59d57af91b8d1e66e6\jetified-protolite-well-known-types-18.0.0\AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0061fe068a5109711a2ad4545c26ec5a\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0061fe068a5109711a2ad4545c26ec5a\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml
-INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml
+INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.google.android.gms:play-services-ads:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ec2b72fe9381afbff820eb8149aa7d0f\jetified-play-services-ads-20.1.0\AndroidManifest.xml:23:9-49
+		ADDED from [com.afollestad.material-dialogs:core:0.9.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\09e0dbe4e567ddac39d90c4257c55296\jetified-core-0.9.6.0\AndroidManifest.xml:11:9-72
 	android:targetSdkVersion
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\main\AndroidManifest.xml
-		INJECTED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\main\AndroidManifest.xml
+		INJECTED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml:6:5-66
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-67
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-67
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml:6:5-66
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-67
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-67
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+MERGED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5cfedb3c23ba1b411eca1c0b402ca3e0\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:24.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5cfedb3c23ba1b411eca1c0b402ca3e0\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:14:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ef3d3fcda922423db5f399cecbc86187\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
@@ -556,26 +625,26 @@ MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.g
 MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d36a54060ae3868ffab4f57be8f88a93\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:8:5-67
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:8:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2e23bd833ef2500d5e3c61d15873d2f1\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2e23bd833ef2500d5e3c61d15873d2f1\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from F:\Projects\Flutter\RustWipe\android\app\src\debug\AndroidManifest.xml:6:22-64
+		ADDED from F:\Projects\Flutter\RustWipe - Copy\android\app\src\debug\AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-16:19
-MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-16:19
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-37:19
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-37:19
-MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-16:19
+MERGED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-16:19
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-37:19
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-37:19
+MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:49:9-55:19
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:49:9-55:19
 MERGED from [com.google.firebase:firebase-firestore:24.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5cfedb3c23ba1b411eca1c0b402ca3e0\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:17:9-23:19
@@ -597,25 +666,25 @@ MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Hedi\.gradle\c
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\81bdf2e2b66573dceb7529a91162dd79\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
 	android:name
-		ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.database.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
+		ADDED from [:firebase_database] F:\Projects\Flutter\RustWipe - Copy\build\firebase_database\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-127
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar
-ADDED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] F:\Projects\Flutter\RustWipe\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+		ADDED from [:cloud_firestore] F:\Projects\Flutter\RustWipe - Copy\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
-MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe - Copy\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:connectivity_plus] F:\Projects\Flutter\RustWipe - Copy\build\connectivity_plus\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\5cfedb3c23ba1b411eca1c0b402ca3e0\jetified-firebase-firestore-24.0.0\AndroidManifest.xml:13:5-79
@@ -630,132 +699,140 @@ MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.g
 MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d36a54060ae3868ffab4f57be8f88a93\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:7:5-79
-MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\066543e93c3d288b1e3f9001af056133\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:20.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\f747d47f4554a42896ae714787edd972\jetified-play-services-ads-lite-20.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2e23bd833ef2500d5e3c61d15873d2f1\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\2e23bd833ef2500d5e3c61d15873d2f1\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:24:5-79
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:26:5-79
 MERGED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:26:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
 MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1a4e5276eb58a109cc47684ea0405030\jetified-grpc-android-1.41.0\AndroidManifest.xml:11:5-79
 MERGED from [io.grpc:grpc-android:1.41.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1a4e5276eb58a109cc47684ea0405030\jetified-grpc-android-1.41.0\AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+		ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:85
+ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-15:85
 	android:value
-		ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-82
+		ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-82
 	android:name
-		ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-128
+		ADDED from [:firebase_analytics] F:\Projects\Flutter\RustWipe - Copy\build\firebase_analytics\intermediates\library_manifest\debug\AndroidManifest.xml:14:17-128
 service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-15:72
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-15:72
 	android:exported
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-37
 	android:permission
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-69
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-69
 	android:name
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-107
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-107
 service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-22:19
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-22:19
 	android:exported
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-97
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-97
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-21:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:17-78
 	android:name
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:20:25-75
 receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-31:20
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-31:20
 	android:exported
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-36
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-36
 	android:permission
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-73
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-73
 	android:name
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-98
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-98
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-30:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-81
 	android:name
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:29:25-78
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-36:85
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-36:85
 	android:value
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-82
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:36:17-82
 	android:name
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:35:17-128
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:35:17-128
 provider#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
-ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:38
+ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-43:38
 	android:authorities
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-88
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-88
 	android:exported
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
 	android:initOrder
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-35
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-35
 	android:name
-		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-102
+		ADDED from [:firebase_messaging] F:\Projects\Flutter\RustWipe - Copy\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-102
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] F:\Projects\Flutter\RustWipe\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] F:\Projects\Flutter\RustWipe - Copy\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 uses-permission#android.permission.VIBRATE
-ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
+ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-66
 	android:name
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-63
 uses-permission#android.permission.USE_FULL_SCREEN_INTENT
-ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
+ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-78
 receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver
-ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-15:40
+ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-15:40
 	android:exported
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-97
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-97
 receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver
-ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-25:20
+ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-25:20
 	android:exported
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-101
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-101
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
-ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-24:29
+ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-24:29
 action#android.intent.action.MY_PACKAGE_REPLACED
-ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-84
+ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:17-84
 	android:name
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-81
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:21:25-81
 action#android.intent.action.QUICKBOOT_POWERON
-ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-82
+ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-82
 	android:name
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-79
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-79
 action#com.htc.intent.action.QUICKBOOT_POWERON
-ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:17-82
+ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:17-82
 	android:name
-		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:25-79
+		ADDED from [:flutter_local_notifications] F:\Projects\Flutter\RustWipe - Copy\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:23:25-79
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+ADDED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+		ADDED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
 	android:theme
-		ADDED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+		ADDED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
 	android:name
-		ADDED from [:url_launcher_android] F:\Projects\Flutter\RustWipe\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+		ADDED from [:url_launcher_android] F:\Projects\Flutter\RustWipe - Copy\build\url_launcher_android\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
 meta-data#io.flutter.embedded_views_preview
-ADDED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-12:36
+ADDED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:10:9-12:36
 	android:value
-		ADDED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-33
+		ADDED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-33
 	android:name
-		ADDED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-61
+		ADDED from [:google_mobile_ads] F:\Projects\Flutter\RustWipe - Copy\build\google_mobile_ads\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-61
+uses-permission#android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS
+ADDED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-95
+	android:name
+		ADDED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-92
+uses-permission#oppo.permission.OPPO_COMPONENT_SAFE
+ADDED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from [:disable_battery_optimization] F:\Projects\Flutter\RustWipe - Copy\build\disable_battery_optimization\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-72
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\abd1802cfd88fbe4921c76d346f07d57\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:5-82
 MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ca90b206fdf996ee80f4ba989256dbe4\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:11:5-82
@@ -872,6 +949,20 @@ ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\He
 		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:43:13-69
 	android:name
 		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\ebd08f8c9b511724b37d204f63d46d40\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:40:13-87
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:17.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0e8e6a89765928c1ad2decc9a07f4903\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
 	android:exported
@@ -926,6 +1017,32 @@ ADDED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\Hedi\
 		ADDED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\573deec374b3e468b907e59b98dd06af\jetified-play-services-basement-17.6.0\AndroidManifest.xml:25:13-66
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:17.6.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\573deec374b3e468b907e59b98dd06af\jetified-play-services-basement-17.6.0\AndroidManifest.xml:24:13-58
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\926450b8b78942692b2e4da60708c61e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\926450b8b78942692b2e4da60708c61e\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\67bf72c9bb01faa516f7a987eeef7197\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d6ad80b5a926bf8b48edb4fecf7e4cc0\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
 provider#androidx.work.impl.WorkManagerInitializer
 ADDED from [androidx.work:work-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\0b379f59a793168a1d6ab0dc2a5e592f\work-runtime-2.1.0\AndroidManifest.xml:30:9-36:35
 	android:authorities
@@ -1108,17 +1225,3 @@ ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\trans
 		ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d22331b91562bebf594323de275c6be\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
 	android:name
 		ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\1d22331b91562bebf594323de275c6be\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
-service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
-ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
-	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
-	android:permission
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
-	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
-receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
-ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
-	android:exported
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
-	android:name
-		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Hedi\.gradle\caches\transforms-2\files-2.1\d1778efc92f4bf7b8193425cd1651e0a\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
