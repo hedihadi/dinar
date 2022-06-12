@@ -5,6 +5,7 @@ import 'dart:math';
 import 'package:RustCompanion/Providers/AddNewNotificationProvider.dart';
 import 'package:RustCompanion/Providers/PlayersProvider.dart';
 import 'package:RustCompanion/Providers/RefreshPlayersProvider.dart';
+import 'package:RustCompanion/Providers/SearchServersProvider.dart';
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -60,6 +61,7 @@ Future<void> main() async {
         ChangeNotifierProvider(create: (_) => PlayersProvider()),
         ChangeNotifierProvider(create: (_) => RefreshPlayersProvider()),
         ChangeNotifierProvider(create: (_) => AddNewNotificationProvider()),
+        ChangeNotifierProvider(create: (_) => SearchServersProvider()),
       ],
       child: Sizer(
         builder: (context, orientation, deviceType) {

@@ -48,7 +48,10 @@ class LocalStorageManager {
       return false;
     }
   }
-
+  Future<bool> is_collect_data_enabled()async{
+    final prefs = await SharedPreferences.getInstance();
+    return prefs.getBool("collect_data") ?? true;
+  }
   Future<void> disable_guide(int id) async {
     final prefs = await SharedPreferences.getInstance();
     List<int> disabled_guides = [];

@@ -12,6 +12,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:intl/intl.dart' as intll;
 import 'package:http/http.dart' as http;
@@ -95,10 +96,24 @@ class _MyServerState extends State<PlayerWidget> {
                   flex: 5,
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(5.w, 0, 0, 0),
-                    child: Text(
-                      "${widget.player.name}",
-                      style: TextStyle(fontSize: 15.sp, fontFamily: "RobotoMono", fontWeight: FontWeight.w600, color: Colors.white),
-                      textAlign: TextAlign.center,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "${widget.player.name}",
+                          style: TextStyle(fontSize: 15.sp, fontFamily: "RobotoMono", fontWeight: FontWeight.w600, color: Colors.white),
+                          textAlign: TextAlign.center,
+                        ),
+                        widget.player.online
+                            ? Text(
+                                "Playing since: ${timeago.format(widget.player.playing_since)}",
+                                style: TextStyle(fontSize: 10.sp, fontFamily: "Roboto", fontWeight: FontWeight.w400, color: ColorManager().positive),
+                              )
+                            : Text(
+                                "Offline since: ${timeago.format(widget.player.sessions.first.stop ?? DateTime.now())}",
+                                style: TextStyle(fontSize: 10.sp, fontFamily: "Roboto", fontWeight: FontWeight.w400, color: ColorManager().negative),
+                              ),
+                      ],
                     ),
                   ),
                 ),
@@ -142,19 +157,10 @@ class _MyServerState extends State<PlayerWidget> {
                             )))
               ],
             ),
-            Wrap(
-              spacing: 1.w,
-              runSpacing: 1.h,
-              children: [
-                //widget.player.online ? tag("Playing On: ${(widget.player.sessions.first.server.name)}", ColorManager().positive) : Container(),
-                widget.player.online
-                    ? tag_player("Playing Since: ${timeago.format(widget.player.playing_since)}", Container(), ColorManager().accent)
-                    : tag_player("Offline Since: ${timeago.format(widget.player.sessions.first.stop ?? DateTime.now())}", Container(), Colors.red)
-              ],
-            ),
+            SizedBox(height: 1.h),
             (widget.player.online && widget.player.sessions.length != 0)
-                ? ElevatedButton(
-                    onPressed: () {
+                ? GestureDetector(
+                    onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -163,13 +169,9 @@ class _MyServerState extends State<PlayerWidget> {
                                 )),
                       );
                     },
-                    child: Text(
-                      "Open Server",
-                      style: TextStyle(color: ColorManager().background1),
-                    ),
-                    style: ButtonStyle(backgroundColor: MaterialStateProperty.all(ColorManager().accent)),
-                  )
+                    child: tag("${widget.player.sessions.first.server.name}", Icon(FontAwesomeIcons.server)))
                 : Container(),
+            SizedBox(height: 2.h),
           ],
         ),
       ),

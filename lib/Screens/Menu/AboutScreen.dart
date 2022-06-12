@@ -33,6 +33,7 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:flutter_tags/flutter_tags.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class AboutScreen extends StatefulWidget {
   const AboutScreen({Key? key}) : super(key: key);
@@ -44,9 +45,15 @@ class AboutScreen extends StatefulWidget {
 class _SettingsState extends State<AboutScreen> {
   bool collect_data = false;
   bool debug = false;
+  String version = "";
   @override
   void initState() {
     super.initState();
+    PackageInfo.fromPlatform().then((value) {
+      setState(() {
+        version = "Version: ${value.version}";
+      });
+    });
   }
 
   @override
@@ -60,78 +67,221 @@ class _SettingsState extends State<AboutScreen> {
         ),
         backgroundColor: ColorManager().background1,
       ),
-      body: ListView(
-        shrinkWrap: true,
-        children: [
-          Container(
-            height: 15.h,
-            decoration: BoxDecoration(
-              color: ColorManager().accent,
-              borderRadius: BorderRadius.only(bottomRight: Radius.circular(11.w), bottomLeft: Radius.circular(11.w)),
-            ),
-            child: Column(
-              children: [
-                SizedBox(height: 1.h),
-                Text(
-                  "Rust Companion",
-                  style: TextStyle(fontFamily: "RobotoMono", fontSize: 20.sp, fontWeight: FontWeight.w600, color: ColorManager().favorited),
-                  textAlign: TextAlign.center,
-                ),
-                Text(
-                  "Version: 1.0.0",
-                  style: TextStyle(fontFamily: "RobotoMono", fontSize: 10.sp, fontWeight: FontWeight.w600, color: Colors.grey[50]),
-                  textAlign: TextAlign.center,
-                ),
-              ],
-            ),
-          ),
-          Padding(
-            padding: EdgeInsets.all(15.sp),
+      body: Padding(
+        padding: EdgeInsets.symmetric(vertical: 1.h, horizontal: 2.w),
+        child: Container(
             child: ListView(
-              shrinkWrap: true,
-              children: [
-                RichText(
-                  text: TextSpan(
-                    text: "Developed By: ",
-                    style: TextStyle(fontFamily: "RobotoMono", fontSize: 10.sp, fontWeight: FontWeight.w600, color: Colors.grey[500]),
-                    children: [
-                      TextSpan(
-                          text: "Hedi Hadi",
-                          style: TextStyle(fontFamily: "RobotoMono", fontSize: 10.sp, fontWeight: FontWeight.w600, color: ColorManager().favorited)),
-                    ],
-                  ),
+          children: [
+            Image.asset("assets/images/ic_launcher.png", height: 15.h),
+            Center(
+                child: Text(
+              "Rust Companion",
+              style: TextStyle(color: ColorManager().title, fontSize: 20.sp, fontFamily: "BebasNeue"),
+            )),
+            Center(
+                child: Text(
+              version,
+              style: TextStyle(color: Colors.grey[700], fontSize: 10.sp, fontFamily: "Roboto"),
+              textAlign: TextAlign.center,
+            )),
+            Center(
+                child: Text(
+              "Track Players and Servers on your Phone!",
+              style: TextStyle(color: Colors.grey[400], fontSize: 12.sp, fontFamily: "Roboto"),
+              textAlign: TextAlign.center,
+            )),
+            SizedBox(height: 2.h),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(5.sp)),
+                border: Border.all(color: Colors.grey[700]!),
+              ),
+              child: Padding(
+                padding: EdgeInsets.all(10.sp),
+                child: ListView(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  children: [
+                    Wrap(
+                      children: [
+                        Icon(
+                          Icons.tag_faces_sharp,
+                          color: Colors.grey[400],
+                        ),
+                        SizedBox(width: 2.w),
+                        Text(
+                          "like this app?",
+                          style: TextStyle(color: Colors.grey[400]),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 1.h),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Column(
+                          children: [
+                            Wrap(
+                              children: [
+                                Icon(Icons.star_outlined, color: Colors.amber),
+                                Icon(Icons.star_outlined, color: Colors.amber),
+                                Icon(Icons.star_outlined, color: Colors.amber),
+                                Icon(Icons.star_outlined, color: Colors.amber),
+                                Icon(Icons.star_outlined, color: Colors.white),
+                              ],
+                            ),
+                            SizedBox(height: 0.5.h),
+                            Text(
+                              "Rate on Play Store",
+                              style: TextStyle(color: Colors.grey[400]),
+                            ),
+                          ],
+                        ),
+                        Container(
+                          color: Colors.grey[600],
+                          height: 5.h,
+                          width: 0.2.w,
+                          margin: EdgeInsets.only(left: 5.w, right: 5.w),
+                        ),
+                        Column(
+                          children: [
+                            Icon(Icons.share, color: Colors.white),
+                            SizedBox(height: 0.5.h),
+                            Text("Share with Friends", style: TextStyle(color: Colors.grey[400])),
+                          ],
+                        )
+                      ],
+                    ),
+                  ],
                 ),
-                RichText(
-                  text: TextSpan(
-                    text: "Design By: ",
-                    style: TextStyle(fontFamily: "RobotoMono", fontSize: 10.sp, fontWeight: FontWeight.w600, color: Colors.grey[500]),
-                    children: [
-                      TextSpan(
-                          text: "Aufa Lana",
-                          style: TextStyle(fontFamily: "RobotoMono", fontSize: 10.sp, fontWeight: FontWeight.w600, color: ColorManager().favorited)),
-                    ],
-                  ),
-                ),
-                SizedBox(height: 2.h),
-                Text(
-                  "Recommendations? Critics? I'd love to hear from you!",
-                  style: TextStyle(fontFamily: "Roboto", fontSize: 15.sp, fontWeight: FontWeight.w600, color: Colors.white),
-                  textAlign: TextAlign.center,
-                ),
-                ElevatedButton(
-                  onPressed: () async {
-                    String email = "mailto:hedihadi45@gmail.com";
-                    if (await canLaunch(email)) {
-                      await launch(email);
-                    }
-                  },
-                  child: Text("Send Email"),
-                  style: ButtonStyle(backgroundColor: MaterialStateProperty.all(ColorManager().accent)),
-                ),
-              ],
+              ),
             ),
-          ),
-        ],
+            SizedBox(height: 2.h),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(5.sp)),
+                border: Border.all(color: Colors.grey[700]!),
+              ),
+              child: Padding(
+                padding: EdgeInsets.all(5.sp),
+                child: ListView(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  children: [
+                    Wrap(
+                      children: [
+                        Icon(
+                          Icons.design_services_outlined,
+                          color: Colors.grey[400],
+                        ),
+                        SizedBox(width: 2.w),
+                        Text(
+                          "Developer",
+                          style: TextStyle(color: Colors.grey[400]),
+                        ),
+                      ],
+                    ),
+                    Text(
+                      "Developed by: Hedi Hadi",
+                      style: TextStyle(color: Colors.grey[700], fontSize: 9.sp),
+                    ),
+                    SizedBox(height: 1.h),
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.grey[800],
+                          child: IconButton(
+                              onPressed: () async {
+                                await launch("https://hedi.cf");
+                              },
+                              icon: Icon(
+                                Icons.web,
+                                color: Colors.grey[400],
+                              )),
+                        ),
+                        SizedBox(width: 2.w),
+                        CircleAvatar(
+                          backgroundColor: Colors.grey[800],
+                          child: IconButton(
+                              onPressed: () async {
+                                await launch("https://www.facebook.com/hediapo/");
+                              },
+                              icon: Icon(
+                                Icons.facebook_sharp,
+                                color: Colors.grey[400],
+                              )),
+                        ),
+                        SizedBox(width: 2.w),
+                        CircleAvatar(
+                          backgroundColor: Colors.grey[800],
+                          child: IconButton(
+                              onPressed: () async {
+                                await launch("mailto:hedihadi45@gmail.com");
+                              },
+                              icon: Icon(
+                                Icons.email_outlined,
+                                color: Colors.grey[400],
+                              )),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+            SizedBox(height: 2.h),
+            Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(5.sp)),
+                border: Border.all(color: Colors.grey[700]!),
+              ),
+              child: Padding(
+                padding: EdgeInsets.all(5.sp),
+                child: ListView(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(),
+                  children: [
+                    Wrap(
+                      children: [
+                        Icon(
+                          Icons.design_services_outlined,
+                          color: Colors.grey[400],
+                        ),
+                        SizedBox(width: 2.w),
+                        Text(
+                          "UI Design",
+                          style: TextStyle(color: Colors.grey[400]),
+                        ),
+                      ],
+                    ),
+                    Text(
+                      "UI Designed by: Aufa Lana",
+                      style: TextStyle(color: Colors.grey[700], fontSize: 9.sp),
+                    ),
+                    SizedBox(height: 1.h),
+                    Wrap(
+                      alignment: WrapAlignment.center,
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.grey[800],
+                          child: IconButton(
+                              onPressed: () async {
+                                await launch("https://www.instagram.com/auffa_lana/");
+                              },
+                              icon: Icon(
+                                Icons.web,
+                                color: Colors.grey[400],
+                              )),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
+          ],
+        )),
       ),
     );
   }

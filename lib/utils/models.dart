@@ -9,7 +9,8 @@ enum ServerType { official, modded, community }
 enum WipeType { weekly, biweekly, monthly }
 enum NotificationType { PlayerComesOnline, PlayerGoesOffline, ServerWipes, PlayerJoinServer, PlayerLeaveServer }
 enum PlayerLeaveOrJoin { Leave, Join }
-enum SortBy {Players,LastWipe,NextWipe,Name}
+enum SortBy { Players, LastWipe, NextWipe }
+
 class Server {
   int id = 0;
   String name = "default";
@@ -106,6 +107,12 @@ class PlayerResponse {
 class Response {
   Response({required this.server, required this.key});
   Server? server;
+  int key = 0;
+}
+
+class ServerSearchResponse {
+  ServerSearchResponse({required this.servers, required this.key});
+  List<Server>? servers;
   int key = 0;
 }
 

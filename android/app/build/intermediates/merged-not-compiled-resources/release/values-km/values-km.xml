@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">ការជូនដំណឹងថ្មី %d</item>
+    <item quantity="other">ការជូនដំណឹងថ្មី %d</item>
+  </plurals>
     <string msgid="5976598919945601918" name="abc_action_bar_home_description">"​ទៅទំព័រដើម"</string>
     <string msgid="8388173803310557296" name="abc_action_bar_up_description">"រំកិលឡើងលើ"</string>
     <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"ជម្រើសច្រើនទៀត"</string>
@@ -27,6 +31,10 @@
     <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"ចែករំលែក​ជា​មួយ"</string>
     <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"ចែក​រំលែក​ជា​មួយ <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
     <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"បង្រួម"</string>
+    <string name="bottomsheet_action_expand_halfway">ពង្រីក​ពាក់កណ្ដាល</string>
+    <string name="character_counter_content_description">តួ​អក្សរ​បាន​បញ្ចូល​ %1$d នៃ %2$d</string>
+    <string name="character_counter_overflowed_content_description">ដែនកំណត់តួអក្សរបានលើស %1$d នៃ %2$d</string>
+    <string name="clear_text_end_icon_content_description">សម្អាតអក្សរ</string>
     <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"បើក"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> នឹងមិនដំណើរការទេ លុះត្រាតែអ្នកបើកសេវាកម្ម Google Play។"</string>
     <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"បើកសេវាកម្ម Google Play"</string>
@@ -45,7 +53,56 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"បើកតាមទូរស័ព្ទ"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"ចូល"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"ចូលដោយប្រើ Google"</string>
+    <string name="error_icon_content_description">បញ្ហា</string>
+    <string name="exposed_dropdown_menu_content_description">បង្ហាញ​ម៉ឺនុយ​ធ្លាក់ចុះ</string>
     <string name="fcm_fallback_notification_channel_label">ផ្សេងៗ</string>
+    <string name="icon_content_description">រូប​ប្រអប់បញ្ចូល</string>
+    <string name="item_view_role_description">ផ្ទាំង</string>
+    <string name="material_clock_toggle_content_description">ជ្រើសរើស AM ឬ PM</string>
+    <string name="material_hour_selection">ជ្រើសរើសម៉ោង</string>
+    <string name="material_hour_suffix">ម៉ោង %1$s</string>
+    <string name="material_minute_selection">ជ្រើស​នាទី</string>
+    <string name="material_minute_suffix">%1$s នាទី</string>
+    <string name="material_timepicker_am">ព្រឹក</string>
+    <string name="material_timepicker_clock_mode_description">ប្តូរ​ទៅ​មុខងារ​នាឡិកា​សម្រាប់​ការ​បញ្ចូល​ម៉ោង។</string>
+    <string name="material_timepicker_hour">ម៉ោង</string>
+    <string name="material_timepicker_minute">នាទី​</string>
+    <string name="material_timepicker_pm">ល្ងាច</string>
+    <string name="material_timepicker_select_time">ជ្រើស​ម៉ោង</string>
+    <string name="material_timepicker_text_input_mode_description">ប្តូរ​ទៅ​មុខងារ​បញ្ចូល​អក្សរ​សម្រាប់​ការ​បញ្ចូល​ម៉ោង។</string>
+    <string name="mtrl_badge_numberless_content_description">ការជូនដំណឹងថ្មី</string>
+    <string name="mtrl_chip_close_icon_content_description">លុប %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">ការជូនដំណឹង​ថ្មីៗ​លើស %1$d ហើយ</string>
+    <string name="mtrl_picker_a11y_next_month">ប្ដូរ​ទៅ​ខែបន្ទាប់</string>
+    <string name="mtrl_picker_a11y_prev_month">ប្ដូរ​ទៅ​ខែមុន</string>
+    <string name="mtrl_picker_announce_current_selection">ការជ្រើសរើស​បច្ចុប្បន្ន៖ %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">ជ្រើសរើស​កាល​បរិច្ឆេទ</string>
+    <string name="mtrl_picker_date_header_unselected">កាលបរិច្ឆេទដែលបាន​ជ្រើសរើស</string>
+    <string name="mtrl_picker_day_of_week_column_header">ជួរឈរ​នៃ​ថ្ងៃ៖ %1$s</string>
+    <string name="mtrl_picker_invalid_format">ទម្រង់មិន​ត្រឹមត្រូវទេ។</string>
+    <string name="mtrl_picker_invalid_format_example">ឧទាហរណ៍៖ %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">ប្រើ៖ %1$s</string>
+    <string name="mtrl_picker_invalid_range">ជួរ​មិនត្រឹមត្រូវទេ។</string>
+    <string name="mtrl_picker_navigate_to_year_description">ប្ដូរទៅ​ឆ្នាំ %1$s</string>
+    <string name="mtrl_picker_out_of_range">នៅក្រៅ​ជួរ៖ %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">កាលបរិច្ឆេទ​ចាប់ផ្ដើម – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – កាលបរិច្ឆេទ​បញ្ចប់</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">ជ្រើស​រើស​ចន្លោះ</string>
+    <string name="mtrl_picker_range_header_unselected">កាលបរិច្ឆេទ​ចាប់ផ្ដើម – កាលបរិច្ឆេទ​បញ្ចប់</string>
+    <string name="mtrl_picker_save">រក្សាទុក</string>
+    <string name="mtrl_picker_text_input_date_hint">កាលបរិច្ឆេទ</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">កាល​បរិច្ឆេទ​បញ្ចប់</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">កាល​បរិច្ឆេទ​ចាប់ផ្ដើម</string>
+    <string name="mtrl_picker_text_input_day_abbr">ថ</string>
+    <string name="mtrl_picker_text_input_month_abbr">ខ</string>
+    <string name="mtrl_picker_text_input_year_abbr">ឆ</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">ប្ដូរទៅ​របៀប​បញ្ចូល​ប្រតិទិន</string>
+    <string name="mtrl_picker_toggle_to_day_selection">ចុច​ដើម្បីប្ដូរទៅ​ការជ្រើសរើសថ្ងៃ</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">ប្ដូរទៅ​របៀប​បញ្ចូល​អក្សរ</string>
+    <string name="mtrl_picker_toggle_to_year_selection">ចុច​ដើម្បីប្ដូរទៅ​ការជ្រើសរើសឆ្នាំ</string>
     <string msgid="4014704848104544569" name="offline_notification_text">"ចុចដើម្បីបើក​ការផ្សាយពាណិជ្ជកម្ម"</string>
     <string msgid="6989673690118446590" name="offline_notification_title">"មើល​ការផ្សាយពាណិជ្ជកម្ម​ដែលអ្នកបានរក្សាទុក នៅពេលអ្នកគ្មានអ៊ីនធឺណិត"</string>
     <string msgid="6452552490969291315" name="offline_opt_in_confirm">"យល់ព្រម"</string>
@@ -53,6 +110,7 @@
     <string msgid="1070677888032715836" name="offline_opt_in_decline">"ទេ អរគុណ"</string>
     <string msgid="5998527443747404848" name="offline_opt_in_message">"យើងនឹងផ្ញើ​ការជូនដំណឹង​ដែលមាន​តំណ​ទៅកាន់​គេហទំព័ររបស់​អ្នកផ្សាយពាណិជ្ជកម្មដល់អ្នក។"</string>
     <string msgid="4928666061183236333" name="offline_opt_in_title">"បើក​ការផ្សាយពាណិជ្ជកម្ម នៅពេលអ្នក​មាន​ការតភ្ជាប់​អ៊ីនធឺណិតវិញ។"</string>
+    <string name="password_toggle_content_description">បង្ហាញពាក្យសម្ងាត់</string>
     <string msgid="368094699078615544" name="s1">"រក្សាទុក​រូបភាព"</string>
     <string msgid="4550830452390689489" name="s2">"អនុញ្ញាត​ឲ្យ​ពាណិជ្ជកម្ម​ផ្ទុក​រូបភាព​នៅក្នុង​វិចិត្រសាល​រូបភាព​ដែរទេ?"</string>
     <string msgid="2435407834265420668" name="s3">"យល់ព្រម"</string>

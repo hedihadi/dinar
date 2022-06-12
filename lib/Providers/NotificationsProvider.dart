@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:math';
 
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:RustCompanion/Functions/ApiManager.dart';
 import 'package:RustCompanion/Functions/LocalStorageManager.dart';
@@ -26,6 +27,15 @@ class NotificationsProvider with ChangeNotifier {
     _notifications.add(notification);
     notifyListeners();
     LocalStorageManager().save_notifications(_notifications);
+
+    if (await LocalStorageManager().is_collect_data_enabled()) {
+      await FirebaseAnalytics.instance.logEvent(
+        name: "notification_added",
+        parameters: {
+          "type": "${notification.notification_type.toString()}",
+        },
+      );
+    }
   }
 
   set(List<NotificationModel> notifications) {
@@ -36,7 +46,6 @@ class NotificationsProvider with ChangeNotifier {
   remove(int id) async {
     _notifications.removeWhere((element) => element.id == id);
     notifyListeners();
-
     LocalStorageManager().save_notifications(_notifications);
   }
 }

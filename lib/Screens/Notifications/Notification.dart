@@ -28,13 +28,14 @@ class _NotificationWidgetState extends State<NotificationWidget> {
       padding: EdgeInsets.all(10.sp),
       child: Container(
         decoration: BoxDecoration(
-            color: widget.notification.color,
+            color: ColorManager().background1,
             border: Border.all(
-              color: widget.notification.color!,
+              color: ColorManager().background1,
             ),
             borderRadius: BorderRadius.all(Radius.circular(20))),
         padding: EdgeInsets.all(10.sp),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
             Row(
@@ -42,7 +43,7 @@ class _NotificationWidgetState extends State<NotificationWidget> {
               children: [
                 Text(
                   "${widget.notification.notification_type.notificationTypeToReadable()}",
-                  style: TextStyle(color: ColorManager().background, fontSize: 12.sp, fontWeight: FontWeight.bold),
+                  style: TextStyle(color: ColorManager().title, fontSize: 12.sp),
                 ),
                 Align(
                   alignment: Alignment.centerRight,
@@ -57,35 +58,33 @@ class _NotificationWidgetState extends State<NotificationWidget> {
               ],
             ),
             SizedBox(height: 1.h),
-            widget.notification.player == null
-                ? Container()
-                : Row(
-                    children: [
-                      tag(" ${widget.notification.player!.name.characters.length > 30 ? '${widget.notification.server!.name.characters.take(30)}...' : '${widget.notification.player!.name}'}",
+            Padding(
+              padding: EdgeInsets.only(left: 5.w, bottom: 1.h),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  widget.notification.player == null
+                      ? Container()
+                      : tag(
+                          " ${widget.notification.player!.name.characters.length > 30 ? '${widget.notification.server!.name.characters.take(30)}...' : '${widget.notification.player!.name}'}",
                           Icon(FontAwesomeIcons.user)),
-                    ],
-                  ),
-            SizedBox(height: 1.h),
-            widget.notification.server == null
-                ? Container()
-                : Row(
-                    children: [
-                      tag("${widget.notification.server!.name.characters.length > 30 ? '${widget.notification.server!.name.characters.take(30)}...' : '${widget.notification.server!.name}'}",
-                          Icon(FontAwesomeIcons.server)),
-                    ],
-                  ),
-            widget.notification.server == null
-                ? Container()
-                : ElevatedButton(
-                    onPressed: () async {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ServerInfo(server: widget.notification.server!)),
-                      );
-                    },
-                    child: Text("Show Server"),
-                    style: ButtonStyle(backgroundColor: MaterialStateProperty.all(HexColor("#303030"))),
-                  ),
+                  SizedBox(height: 1.h),
+                  widget.notification.server == null
+                      ? Container()
+                      : GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => ServerInfo(server: widget.notification.server!)),
+                            );
+                          },
+                          child: tag(
+                              "${widget.notification.server!.name.characters.length > 30 ? '${widget.notification.server!.name.characters.take(30)}...' : '${widget.notification.server!.name}'}",
+                              Icon(FontAwesomeIcons.server)),
+                        ),
+                ],
+              ),
+            )
           ],
         ),
       ),

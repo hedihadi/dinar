@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:isolate';
 import 'dart:math';
 import 'package:RustCompanion/Functions/ApiManager.dart';
+import 'package:RustCompanion/Functions/LocalStorageManager.dart';
 import 'package:RustCompanion/Screens/Players/PlayerWidget.dart';
 import 'package:RustCompanion/Screens/Servers/ServerInfo_playerWidget.dart';
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
@@ -189,10 +190,18 @@ class _ServerInfoState extends State<ServerInfo> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 1.h, horizontal: 5.w),
+                  padding: EdgeInsets.symmetric(vertical: 1.h, horizontal: 30.w),
                   child: ElevatedButton(
                     onPressed: () async {
                       if (!await launch(widget.server.url)) throw 'Could not launch';
+                      if (await LocalStorageManager().is_collect_data_enabled()) {
+                        await FirebaseAnalytics.instance.logEvent(
+                          name: "visited_website",
+                          parameters: {
+                            "serverid": "${widget.server.id}",
+                          },
+                        );
+                      }
                     },
                     child: Text(
                       "Visit Website",
@@ -206,10 +215,25 @@ class _ServerInfoState extends State<ServerInfo> {
                   padding: EdgeInsets.symmetric(horizontal: 5.w),
                   child: players.length == 0
                       ? players_loading
-                          ? CircularProgressIndicator()
+                          ? Padding(
+                              padding: EdgeInsets.symmetric(horizontal: 40.w),
+                              child: SizedBox(
+                                height: 10.sp,
+                                width: 10.sp,
+                                child: CircularProgressIndicator(),
+                              ),
+                            )
                           : ElevatedButton(
                               onPressed: () async {
                                 loadPlayers();
+                                if (await LocalStorageManager().is_collect_data_enabled()) {
+                                  await FirebaseAnalytics.instance.logEvent(
+                                    name: "loaded_players",
+                                    parameters: {
+                                      "serverid": "${widget.server.id}",
+                                    },
+                                  );
+                                }
                               },
                               child: Text(
                                 "Load Players",
@@ -234,8 +258,16 @@ class _ServerInfoState extends State<ServerInfo> {
                             decoration: InputDecoration(
                                 prefixIcon: Icon(Icons.search),
                                 suffixIcon: IconButton(
-                                    onPressed: () {
+                                    onPressed: () async {
                                       loadPlayers();
+                                      if (await LocalStorageManager().is_collect_data_enabled()) {
+                                        await FirebaseAnalytics.instance.logEvent(
+                                          name: "players_refreshed",
+                                          parameters: {
+                                            "serverid": "${widget.server.id}",
+                                          },
+                                        );
+                                      }
                                     },
                                     icon: Icon(Icons.refresh, color: Colors.grey[500])),
                                 border: OutlineInputBorder(

@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:RustCompanion/Functions/LocalStorageManager.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:RustCompanion/Functions/ApiManager.dart';
 import 'package:RustCompanion/utils/models.dart';
@@ -59,6 +61,15 @@ class PlayersProvider with ChangeNotifier {
     //save changes to local storage
     final prefs = await SharedPreferences.getInstance();
     prefs.setString("favorited_players", jsonEncode(_favorited_players));
+
+        if (await LocalStorageManager().is_collect_data_enabled()) {
+      await FirebaseAnalytics.instance.logEvent(
+        name: "player_favorited",
+        parameters: {
+          "playerid": "$id",
+        },
+      );
+    }
   }
 
   remove_favorited_player(int id) async {
@@ -69,5 +80,14 @@ class PlayersProvider with ChangeNotifier {
     //save changes to local storage
     final prefs = await SharedPreferences.getInstance();
     prefs.setString("favorited_players", jsonEncode(_favorited_players));
+
+        if (await LocalStorageManager().is_collect_data_enabled()) {
+      await FirebaseAnalytics.instance.logEvent(
+        name: "player_unfavorited",
+        parameters: {
+          "playerid": "$id",
+        },
+      );
+    }
   }
 }

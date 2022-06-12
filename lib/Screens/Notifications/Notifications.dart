@@ -36,26 +36,20 @@ class _NotificationsState extends State<Notifications> {
   @override
   Widget build(BuildContext context) {
     return Consumer<NotificationsProvider>(builder: (context1, value, child) {
-      return SmartRefresher(
-        controller: refresh_controller,
-        enablePullDown: true,
-        header: WaterDropMaterialHeader(),
-        onRefresh: () async {
-          context1.read<RefreshServersProvider>().update();
-          Future.delayed(const Duration(seconds: 1), () {
-            refresh_controller.refreshToIdle();
+      return ListView.separated(
+          shrinkWrap: true,
+          itemCount: value.notifications.length,
+          separatorBuilder: (context, position) {
+            if (position == 0) {
+              if (myBanner.responseInfo == null) return Container();
+              return Container(height: myBanner.size.height.toDouble(), child: adWidget);
+            } else {
+              return Container();
+            }
+          },
+          itemBuilder: (context1, index) {
+            return NotificationWidget(notification: value.notifications[index]);
           });
-        },
-        child: ListView.separated(
-            shrinkWrap: true,
-            itemCount: value.notifications.length,
-            separatorBuilder: (context, position) {
-              return position == 0 ? Container(height: myBanner.size.height.toDouble(), child: adWidget) : Container();
-            },
-            itemBuilder: (context1, index) {
-              return NotificationWidget(notification: value.notifications[index]);
-            }),
-      );
     });
   }
 }

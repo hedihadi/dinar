@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "186782020118",
+    "firebase_url": "https://rustwipe-71ce4-default-rtdb.europe-west1.firebasedatabase.app",
     "project_id": "rustwipe-71ce4",
     "storage_bucket": "rustwipe-71ce4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:186782020118:android:408a2c83f4abfab004bb37",
+        "mobilesdk_app_id": "1:186782020118:android:b4d7a1ec9b398da504bb37",
         "android_client_info": {
           "package_name": "com.hedihadi.rustcompanion"
         }

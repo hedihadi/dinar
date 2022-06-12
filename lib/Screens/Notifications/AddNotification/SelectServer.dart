@@ -15,7 +15,6 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:intl/intl.dart' as intll;
 import 'package:http/http.dart' as http;
 import 'package:RustCompanion/Functions/ApiManager.dart';
-import 'package:RustCompanion/Screens/Servers/AddNewServer_Server.dart';
 import 'package:RustCompanion/Screens/Notifications/AddNotification/AddNotification_ServerWidget.dart';
 import 'package:RustCompanion/utils/ColorManager.dart';
 import 'package:RustCompanion/utils/models.dart';

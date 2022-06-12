@@ -20,7 +20,6 @@ import 'package:http/http.dart' as http;
 import 'package:provider/src/provider.dart';
 import 'package:RustCompanion/Functions/ApiManager.dart';
 import 'package:RustCompanion/Providers/NotificationsProvider.dart';
-import 'package:RustCompanion/Screens/Servers/AddNewServer_Server.dart';
 import 'package:RustCompanion/Screens/Notifications/AddNotification/SelectServer.dart';
 
 import 'package:RustCompanion/utils/ColorManager.dart';

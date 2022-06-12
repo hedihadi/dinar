@@ -1,6 +1,8 @@
+import 'package:RustCompanion/Functions/LocalStorageManager.dart';
 import 'package:RustCompanion/Providers/PlayersProvider.dart';
 import 'package:RustCompanion/Providers/RefreshPlayersProvider.dart';
 import 'package:RustCompanion/Screens/Players/PlayerWidget.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
@@ -20,7 +22,7 @@ class Players extends StatefulWidget {
 class _MyServersState extends State<Players> {
   RefreshController refresh_controller = RefreshController(initialRefresh: false);
   final BannerAd myBanner = BannerAd(
-    adUnitId: 'ca-app-pub-5924426514255017/3495392228',
+    adUnitId: 'ca-app-pub-3008670047597964/8944552650',
     size: AdSize.banner,
     request: AdRequest(),
     listener: BannerAdListener(),
@@ -42,6 +44,11 @@ class _MyServersState extends State<Players> {
         enablePullDown: true,
         header: WaterDropMaterialHeader(),
         onRefresh: () async {
+          if (await LocalStorageManager().is_collect_data_enabled()) {
+            await FirebaseAnalytics.instance.logEvent(
+              name: "players_screen_refreshed",
+            );
+          }
           context1.read<RefreshPlayersProvider>().update();
           Future.delayed(const Duration(seconds: 1), () {
             refresh_controller.refreshToIdle();
@@ -54,7 +61,12 @@ class _MyServersState extends State<Players> {
               shrinkWrap: true,
               itemCount: value.players.length,
               separatorBuilder: (context, position) {
-                return position == 0 ? Container(height: myBanner.size.height.toDouble(), child: adWidget) : Container();
+                if (position == 0) {
+                  if (myBanner.responseInfo == null) return Container();
+                  return Container(height: myBanner.size.height.toDouble(), child: adWidget);
+                } else {
+                  return Container();
+                }
               },
               itemBuilder: (context1, index) {
                 return PlayerWidget(player: value.players[index]);

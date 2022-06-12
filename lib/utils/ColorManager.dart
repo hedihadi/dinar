@@ -8,8 +8,8 @@ class ColorManager {
   Color title = HexColor("#C5C559");
   Color title1 = Colors.white;
   Color accent = HexColor("#688040");
-  Color negative = Colors.red;
-  Color positive = Colors.green;
+  Color negative = Colors.red[300]!;
+  Color positive = Colors.green[300]!;
   Color minor = Colors.white;
   Color tag1 = HexColor("#7B7B24");
   Color tag2 = HexColor("#759CA1");

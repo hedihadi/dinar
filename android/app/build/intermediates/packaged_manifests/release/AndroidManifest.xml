@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hedihadi.dinar"
+    package="com.hedihadi.rustcompanion"
     android:versionCode="1"
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="19"
+        android:minSdkVersion="21"
         android:targetSdkVersion="31" />
 
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
@@ -35,15 +35,16 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
 
     <application
-        android:name="androidx.multidex.MultiDexApplication"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
-        android:label="Dinar - دینار" >
+        android:label="Rust Companion" >
         <service
             android:name="eu.acme.service.FireBaseInstanceIdService"
             android:exported="false" >
@@ -69,7 +70,7 @@
         </receiver>
 
         <activity
-            android:name="com.hedihadi.dinar.MainActivity"
+            android:name="com.hedihadi.rustcompanion.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
@@ -83,9 +84,7 @@
                  while the Flutter UI initializes. After that, this theme continues
                  to determine the Window background behind the Flutter UI.
             -->
-            <meta-data
-                android:name="com.google.android.gms.ads.APPLICATION_ID"
-                android:value="ca-app-pub-5924426514255017~3558048622" />
+
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme" />
@@ -115,7 +114,7 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-5924426514255017~9984189005" />
+            android:value="ca-app-pub-3008670047597964~8516057685" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -178,7 +177,7 @@
 
         <provider
             android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-            android:authorities="com.hedihadi.dinar.flutterfirebasemessaginginitprovider"
+            android:authorities="com.hedihadi.rustcompanion.flutterfirebasemessaginginitprovider"
             android:exported="false"
             android:initOrder="99" />
 
@@ -235,7 +234,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.hedihadi.dinar.firebaseinitprovider"
+            android:authorities="com.hedihadi.rustcompanion.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
@@ -255,6 +254,15 @@
             android:enabled="true"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
 
         <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
@@ -268,7 +276,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.hedihadi.dinar.mobileadsinitprovider"
+            android:authorities="com.hedihadi.rustcompanion.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -282,8 +290,19 @@
             android:value="@integer/google_play_services_version" />
 
         <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.hedihadi.rustcompanion.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+        <provider
             android:name="androidx.work.impl.WorkManagerInitializer"
-            android:authorities="com.hedihadi.dinar.workmanager-init"
+            android:authorities="com.hedihadi.rustcompanion.workmanager-init"
             android:directBootAware="false"
             android:exported="false"
             android:multiprocess="true" />
@@ -367,15 +386,6 @@
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
-            android:exported="false" />
-        <service
-            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-            android:exported="false"
-            android:permission="android.permission.BIND_JOB_SERVICE" >
-        </service>
-
-        <receiver
-            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
             android:exported="false" />
     </application>
 

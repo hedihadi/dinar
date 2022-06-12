@@ -123,19 +123,22 @@ class MainScreenState extends State<MainScreen> {
       await ApiManager().getFavoritedPlayers(context);
     });
 
-    //setup debugmode and collect data if it hasn't already
+    //setup settings if they don't exist, so they won't be null
     if (prefs.containsKey("debug") == false) {
       prefs.setBool("debug", false);
     }
     if (prefs.containsKey("collect_data") == false) {
       prefs.setBool("collect_data", true);
     }
+    if (prefs.containsKey("notifications_frequency") == false) {
+      prefs.setInt("notifications_frequency", 5);
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return loaded == false
-        ? CircularProgressIndicator()
+        ? Center(child: CircularProgressIndicator(color: ColorManager().title))
         : Scaffold(
             backgroundColor: ColorManager().background,
             key: _scaffoldKey,
@@ -152,8 +155,10 @@ class MainScreenState extends State<MainScreen> {
                       ),
                       child: Column(
                         children: [
-                          Text('Rust Companion',
-                              style: TextStyle(fontFamily: "RobotoMono", fontWeight: FontWeight.w500, color: ColorManager().accent, fontSize: 15.sp)),
+                          Text(
+                            "Rust Companion",
+                            style: TextStyle(color: ColorManager().title, fontSize: 20.sp, fontFamily: "BebasNeue"),
+                          ),
                           SizedBox(height: 2.h),
                           GestureDetector(
                             onTap: () {
@@ -179,6 +184,7 @@ class MainScreenState extends State<MainScreen> {
                       ),
                     ),
                     ListTile(
+                      
                       title: Text(
                         'Settings',
                         style: TextStyle(
@@ -240,9 +246,6 @@ class MainScreenState extends State<MainScreen> {
               currentIndex: _selected_index,
               selectedItemColor: ColorManager().accent,
               onTap: (int index) {
-                if (index == 2) {
-                  GuideManager.show_guide(37847346, context, GuideWidgets.notifications_guide, true);
-                }
                 setState(() {
                   _selected_index = index;
                 });

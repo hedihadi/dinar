@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 import 'package:RustCompanion/Providers/PlayersProvider.dart';
+import 'package:RustCompanion/Screens/Servers/AddNewServer.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/src/provider.dart';
@@ -10,6 +11,73 @@ import 'package:RustCompanion/utils/models.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ApiManager {
+  Future<void> getAllServers(List<int> favorited_servers, int key, StreamController<ServerSearchResponse> controller, AddNewServerState reference,
+      Map<ServerType, bool> server_types, Map<WipeType, bool> wipe_types, int minimum, int maximum) async {
+    http.Response response = await http.get(Uri.parse(
+        'https://api.battlemetrics.com/servers?filter[game]=rust&page[size]=100&&filter[status]=online&filter[players][min]=${minimum}&&filter[players][max]=${maximum}'));
+    Map<String, dynamic> raw_jsons = jsonDecode(response.body);
+    await fetchServerList(favorited_servers, key, controller, raw_jsons, reference, server_types, wipe_types, minimum, maximum);
+
+    //we've parsed first page, now parse the rest of the pages
+    while (true) {
+      //first check if key has changed, if so.. stop this loop
+
+      int current_key = reference.get_key();
+      if (key != current_key) {
+        return;
+      }
+
+      String url = raw_jsons["links"]["next"];
+      response = await http.get(Uri.parse(url));
+      raw_jsons = jsonDecode(response.body);
+      try {
+        //if this code throws error, that means there's no more servers left and we can return;
+        raw_jsons["data"].length;
+      } catch (c) {
+        return;
+      }
+      await fetchServerList(favorited_servers, key, controller, raw_jsons, reference, server_types, wipe_types, minimum, maximum);
+    }
+  }
+
+  Future<void> fetchServerList(
+      List<int> favorited_servers,
+      int key,
+      StreamController<ServerSearchResponse> controller,
+      Map<String, dynamic> raw_jsons,
+      AddNewServerState reference,
+      Map<ServerType, bool> server_types,
+      Map<WipeType, bool> wipe_types,
+      int minimum,
+      int maximum) async {
+    ServerSearchResponse response = ServerSearchResponse(key: key, servers: []);
+    List<Server> servers = [];
+    for (var server_raw in raw_jsons["data"]) {
+      int current_key = reference.get_key();
+      if (key != current_key) {
+        return;
+      }
+      Server server = Server();
+      try {
+        server.fetchData(server_raw);
+      } catch (c) {
+        continue;
+      }
+      //filter the server
+      if (server_types[server.type] == false) continue;
+      if (wipe_types[server.wipe_type] == false) continue;
+      if (favorited_servers.contains(server.id)) {
+        server.favorited = true;
+      }
+
+      servers.add(server);
+      //await Future.delayed(Duration(milliseconds: 1000));
+    }
+    response.servers = servers;
+
+    controller.sink.add(response);
+  }
+
   Future<void> getFavoritedServers(BuildContext context) async {
     final favorited_servers = context.read<ServersProvider>().favorited_servers;
     //run code for each favorited server
@@ -44,15 +112,15 @@ class ApiManager {
   }
 
   Future<void> searchServers(String name, Map<ServerType, bool> server_types, Map<WipeType, bool> wipe_types, int minimum_players,
-      int maximum_players, int key, StreamController<Response> controller, BuildContext context) async {
+      int maximum_players, int key, StreamController<ServerSearchResponse> controller, BuildContext context) async {
     List<Server> servers = [];
-
+    ServerSearchResponse response = ServerSearchResponse(key: key, servers: []);
     final prefs = await SharedPreferences.getInstance();
     final favorited_servers = context.read<ServersProvider>().favorited_servers;
 
-    http.Response response = await http
-        .get(Uri.parse('https://api.battlemetrics.com/servers?filter[search]="$name"&filter[game]=rust&filter[status]=online&sort=players'));
-    Map<String, dynamic> raw_jsons = jsonDecode(response.body);
+    http.Response api_response = await http.get(Uri.parse(
+        'https://api.battlemetrics.com/servers?filter[search]="$name"&filter[game]=rust&filter[status]=online&filter[players][min]=${minimum_players}&&filter[players][max]=${maximum_players}'));
+    Map<String, dynamic> raw_jsons = jsonDecode(api_response.body);
     if (raw_jsons.containsKey("errors")) {
       return;
     }
@@ -63,16 +131,14 @@ class ApiManager {
       server.fetchData(raw_json);
       if (server_types[server.type] == false) continue;
       if (wipe_types[server.wipe_type] == false) continue;
-      if (server.players < minimum_players) continue;
-      if (server.players > maximum_players) continue;
       Response response = Response(server: server, key: key);
       if (favorited_servers.contains(server.id)) {
         server.favorited = true;
       }
-      response.server = server;
-      response.key = key;
-      controller.sink.add(response);
+      servers.add(server);
     }
+    response.servers = servers;
+    controller.sink.add(response);
   }
 
   Future<void> getFavoritedPlayers(BuildContext context) async {

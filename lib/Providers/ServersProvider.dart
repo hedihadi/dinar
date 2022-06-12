@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:RustCompanion/Functions/LocalStorageManager.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:RustCompanion/Functions/ApiManager.dart';
 import 'package:RustCompanion/utils/models.dart';
@@ -58,6 +60,16 @@ class ServersProvider with ChangeNotifier {
     //save changes to local storage
     final prefs = await SharedPreferences.getInstance();
     prefs.setString("favorited_servers", jsonEncode(_favorited_servers));
+
+    //send analytics data
+    if (await LocalStorageManager().is_collect_data_enabled()) {
+      await FirebaseAnalytics.instance.logEvent(
+        name: "server_favorited",
+        parameters: {
+          "serverid": "$id",
+        },
+      );
+    }
   }
 
   remove_favorited_server(int id) async {
@@ -68,5 +80,14 @@ class ServersProvider with ChangeNotifier {
     //save changes to local storage
     final prefs = await SharedPreferences.getInstance();
     prefs.setString("favorited_servers", jsonEncode(favorited_servers));
+        //send analytics data
+    if (await LocalStorageManager().is_collect_data_enabled()) {
+      await FirebaseAnalytics.instance.logEvent(
+        name: "server_unfavorited",
+        parameters: {
+          "serverid": "$id",
+        },
+      );
+    }
   }
 }

@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.hedihadi.dinar",
+  "applicationId": "com.hedihadi.rustcompanion",
   "variantName": "processReleaseResources",
   "elements": [
     {

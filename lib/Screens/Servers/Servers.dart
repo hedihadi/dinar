@@ -1,3 +1,5 @@
+import 'package:RustCompanion/Functions/LocalStorageManager.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:provider/provider.dart';
@@ -16,7 +18,7 @@ class Servers extends StatefulWidget {
 class _MyServersState extends State<Servers> {
   RefreshController refresh_controller = RefreshController(initialRefresh: false);
   final BannerAd myBanner = BannerAd(
-    adUnitId: 'ca-app-pub-5924426514255017/3495392228',
+    adUnitId: 'ca-app-pub-3008670047597964/4576812670',
     size: AdSize.banner,
     request: AdRequest(),
     listener: BannerAdListener(),
@@ -40,6 +42,11 @@ class _MyServersState extends State<Servers> {
         header: WaterDropMaterialHeader(),
         onRefresh: () async {
           context1.read<RefreshServersProvider>().update();
+          if (await LocalStorageManager().is_collect_data_enabled()) {
+            await FirebaseAnalytics.instance.logEvent(
+              name: "servers_screen_refreshed",
+            );
+          }
           Future.delayed(const Duration(seconds: 1), () {
             refresh_controller.refreshToIdle();
           });
@@ -48,7 +55,12 @@ class _MyServersState extends State<Servers> {
             shrinkWrap: true,
             itemCount: value.servers.length,
             separatorBuilder: (context, position) {
-              return position == 0 ? Container(height: myBanner.size.height.toDouble(), child: adWidget) : Container();
+              if (position == 0) {
+                if (myBanner.responseInfo == null) return Container();
+                return Container(height: myBanner.size.height.toDouble(), child: adWidget);
+              } else {
+                return Container();
+              }
             },
             itemBuilder: (context1, index) {
               return MyServer(server: value.servers[index]);

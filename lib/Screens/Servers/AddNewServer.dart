@@ -2,6 +2,9 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:isolate';
 import 'dart:math';
+import 'package:RustCompanion/Providers/SearchServersProvider.dart';
+import 'package:RustCompanion/Providers/ServersProvider.dart';
+import 'package:RustCompanion/Screens/Servers/MyServer.dart';
 import 'package:android_alarm_manager_plus/android_alarm_manager_plus.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
@@ -15,7 +18,6 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:intl/intl.dart' as intll;
 import 'package:http/http.dart' as http;
 import 'package:RustCompanion/Functions/ApiManager.dart';
-import 'package:RustCompanion/Screens/Servers/AddNewServer_Server.dart';
 import 'package:RustCompanion/utils/ColorManager.dart';
 import 'package:RustCompanion/utils/models.dart';
 import 'package:RustCompanion/utils/utils.dart';
@@ -24,6 +26,8 @@ import 'dart:io' as dartio;
 import 'package:google_mobile_ads/google_mobile_ads.dart' as ad;
 import 'package:function_tree/function_tree.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:provider/provider.dart';
+import 'package:provider/src/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:sizer/sizer.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
@@ -32,78 +36,68 @@ class AddNewServer extends StatefulWidget {
   const AddNewServer({Key? key}) : super(key: key);
 
   @override
-  State<AddNewServer> createState() => _AddNewServerState();
+  State<AddNewServer> createState() => AddNewServerState();
 }
 
-class _AddNewServerState extends State<AddNewServer> {
+class AddNewServerState extends State<AddNewServer> {
   TextEditingController search_controller = TextEditingController();
-  TextEditingController minimum_controller = TextEditingController(text: "0");
+  TextEditingController minimum_controller = TextEditingController(text: "1");
   TextEditingController maximum_controller = TextEditingController(text: "999");
-  bool descending = false;
+  bool descending = true;
+  bool hide_non_wiping_servers = true;
   SortBy sort_by = SortBy.Players;
   final ApiManager api_manager = ApiManager();
   ScrollController scroll_controller = ScrollController();
   List<Server> servers = [];
   Map<ServerType, bool> server_types = {ServerType.official: true, ServerType.community: true, ServerType.modded: true};
   Map<WipeType, bool> wipe_types = {WipeType.weekly: true, WipeType.biweekly: true, WipeType.monthly: true};
-
+  Key list_key = Key("1");
+  bool loading = false;
   int key = 0;
-  StreamController<Response> controller = StreamController<Response>.broadcast();
+  StreamController<ServerSearchResponse> controller = StreamController<ServerSearchResponse>.broadcast();
+  get_key() {
+    return key;
+  }
+
   @override
   void initState() {
     super.initState();
     controller.stream.listen((event) {
       if (event.key == key) {
-        servers.add(event.server!);
-        sort_servers();
+        if (mounted) {
+          context.read<SearchServersProvider>().addServers(event.servers!);
+        }
+        context.read<SearchServersProvider>().sort_servers(sort_by, descending, hide_non_wiping_servers);
       }
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-          elevation: 0, backgroundColor: HexColor("#202020"), centerTitle: true, title: Text("Add New Server", overflow: TextOverflow.ellipsis)),
-      body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 7.w),
-        child: ListView(
-          shrinkWrap: true,
-          children: [
-            SizedBox(height: 2.h),
-            TextField(
-              controller: search_controller,
-              style: TextStyle(color: Colors.white),
-              decoration: InputDecoration(
-                  prefixIcon: Icon(Icons.search),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(3.sp),
-                    borderSide: BorderSide.none,
-                  ),
-                  labelStyle: TextStyle(color: Colors.grey[500]),
-                  filled: true,
-                  fillColor: ColorManager().background1,
-                  labelText: "Search server name...",
-                  floatingLabelBehavior: FloatingLabelBehavior.never),
-            ),
-            Divider(height: 2.h),
-            ServerTypesWidget(),
-            Divider(height: 2.h),
-            Text(
-              "Players:-",
-              style: TextStyle(fontFamily: "BebasNeue", fontSize: 15.sp, color: ColorManager().favorited),
-            ),
-            Row(
-              children: [
-                Flexible(
-                  child: TextField(
-                    controller: minimum_controller,
-                    keyboardType: TextInputType.number,
-                    inputFormatters: <TextInputFormatter>[
-                      FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
-                    ],
+    return WillPopScope(
+      onWillPop: () async {
+        context.read<SearchServersProvider>().clear();
+        return true;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+            elevation: 0, backgroundColor: HexColor("#202020"), centerTitle: true, title: Text("Add New Server", overflow: TextOverflow.ellipsis)),
+        body: GestureDetector(
+          onTap: () {
+            FocusScope.of(context).requestFocus(new FocusNode());
+          },
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 7.w),
+            child: CustomScrollView(
+              slivers: [
+                SliverList(
+                    delegate: SliverChildListDelegate([
+                  SizedBox(height: 2.h),
+                  TextField(
+                    controller: search_controller,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.search),
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(3.sp),
                           borderSide: BorderSide.none,
@@ -111,62 +105,135 @@ class _AddNewServerState extends State<AddNewServer> {
                         labelStyle: TextStyle(color: Colors.grey[500]),
                         filled: true,
                         fillColor: ColorManager().background1,
-                        labelText: "Minimum",
+                        labelText: "Search server name...",
                         floatingLabelBehavior: FloatingLabelBehavior.never),
                   ),
-                ),
-                SizedBox(width: 5.w),
-                Flexible(
-                  child: TextField(
-                    controller: maximum_controller,
-                    keyboardType: TextInputType.number,
-                    inputFormatters: <TextInputFormatter>[
-                      FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
-                    ],
-                    style: TextStyle(color: Colors.white),
-                    decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(3.sp),
-                          borderSide: BorderSide.none,
+                  Divider(height: 2.h),
+                  ServerTypesWidget(),
+                  Divider(height: 2.h),
+                  Text(
+                    "Players:-",
+                    style: TextStyle(fontFamily: "BebasNeue", fontSize: 15.sp, color: ColorManager().favorited),
+                  ),
+                  Row(
+                    children: [
+                      Flexible(
+                        child: TextField(
+                          controller: minimum_controller,
+                          keyboardType: TextInputType.number,
+                          inputFormatters: <TextInputFormatter>[
+                            FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
+                          ],
+                          style: TextStyle(color: Colors.white),
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(3.sp),
+                                borderSide: BorderSide.none,
+                              ),
+                              labelStyle: TextStyle(color: Colors.grey[500]),
+                              filled: true,
+                              fillColor: ColorManager().background1,
+                              labelText: "Minimum",
+                              floatingLabelBehavior: FloatingLabelBehavior.never),
                         ),
-                        labelStyle: TextStyle(color: Colors.grey[500]),
-                        filled: true,
-                        fillColor: ColorManager().background1,
-                        labelText: "Maximum",
-                        floatingLabelBehavior: FloatingLabelBehavior.never),
+                      ),
+                      SizedBox(width: 5.w),
+                      Flexible(
+                        child: TextField(
+                          controller: maximum_controller,
+                          keyboardType: TextInputType.number,
+                          inputFormatters: <TextInputFormatter>[
+                            FilteringTextInputFormatter.allow(RegExp(r'[0-9]')),
+                          ],
+                          style: TextStyle(color: Colors.white),
+                          decoration: InputDecoration(
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(3.sp),
+                                borderSide: BorderSide.none,
+                              ),
+                              labelStyle: TextStyle(color: Colors.grey[500]),
+                              filled: true,
+                              fillColor: ColorManager().background1,
+                              labelText: "Maximum",
+                              floatingLabelBehavior: FloatingLabelBehavior.never),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
+                  Divider(height: 2.h),
+                  SortByWidget(),
+                  Divider(height: 2.h),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 20.w),
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        //check if it's loading, if so, stop the search
+                        if (loading == true) {
+                          setState(() {
+                            loading = false;
+                            key = Random().nextInt(999999);
+                          });
+                          return;
+                        } else {}
+                        setState(() {
+                          loading = true;
+                        });
+                        key = Random().nextInt(999999);
+                        context.read<SearchServersProvider>().clear();
+
+                        if (search_controller.text == "") {
+                          //keep track of the current key
+                          int _key = key;
+                          final favorited_servers = context.read<ServersProvider>().favorited_servers;
+
+                          await api_manager.getAllServers(favorited_servers, key, controller, this, server_types, wipe_types,
+                              int.parse(minimum_controller.text), int.parse(maximum_controller.text));
+                          //if key has changed, that means this is irrelevant now, dont change loading state.
+                          if (_key == key) {
+                            setState(() {
+                              loading = false;
+                            });
+                          }
+                        }
+                        int _key = key;
+
+                        await api_manager.searchServers(search_controller.text, server_types, wipe_types, int.parse(minimum_controller.text),
+                            int.parse(maximum_controller.text), key, controller, context);
+                        if (_key == key) {
+                          setState(() {
+                            loading = false;
+                          });
+                        }
+                      },
+                      child: loading
+                          ? SizedBox(child: CircularProgressIndicator(), height: 2.h)
+                          : Text(
+                              "Search",
+                              style: TextStyle(color: ColorManager().background1),
+                            ),
+                      style: ButtonStyle(backgroundColor: MaterialStateProperty.all(ColorManager().accent)),
+                    ),
+                  ),
+                  Consumer<SearchServersProvider>(builder: (context1, value, child) {
+                    return value.servers.length == 0
+                        ? Container()
+                        : Text(
+                            'loaded ${value.filtered_servers.length} servers.',
+                            style: TextStyle(color: ColorManager().accent, fontFamily: "BebasNeue", fontSize: 15.sp),
+                            textAlign: TextAlign.center,
+                          );
+                  }),
+                ])),
+                Consumer<SearchServersProvider>(builder: (context1, value, child) {
+                  return SliverList(
+                      delegate: SliverChildBuilderDelegate(
+                    (context, index) => MyServer(server: value.filtered_servers[index], enable_animation: false),
+                    childCount: value.filtered_servers.length,
+                  ));
+                }),
               ],
             ),
-            Divider(height: 2.h),
-            SortByWidget(),
-            Divider(height: 2.h),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.w),
-              child: ElevatedButton(
-                onPressed: () async {
-                  key = Random().nextInt(999999);
-                  setState(() {
-                    servers.clear();
-                  });
-                  api_manager.searchServers(search_controller.text, server_types, wipe_types, int.parse(minimum_controller.text),
-                      int.parse(maximum_controller.text), key, controller, context);
-                },
-                child: Text(
-                  "Search",
-                  style: TextStyle(color: ColorManager().background1),
-                ),
-                style: ButtonStyle(backgroundColor: MaterialStateProperty.all(ColorManager().accent)),
-              ),
-            ),
-            ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                itemCount: servers.length,
-                itemBuilder: (context, index) {
-                  return AddNewServer_Server(server: servers[index]);
-                }),
-          ],
+          ),
         ),
       ),
     );
@@ -301,23 +368,6 @@ class _AddNewServerState extends State<AddNewServer> {
     );
   }
 
-  void sort_servers() {
-    if (sort_by == SortBy.Players && descending == true) {
-      servers.sort((b, a) => a.players.compareTo(b.players));
-    } else if (sort_by == SortBy.Players && descending == false) {
-      servers.sort((a, b) => a.players.compareTo(b.players));
-    } else if (sort_by == SortBy.LastWipe && descending == true) {
-      servers.sort((b, a) => a.last_wipe.compareTo(b.last_wipe));
-    } else if (sort_by == SortBy.LastWipe && descending == false) {
-      servers.sort((a, b) => a.last_wipe.compareTo(b.last_wipe));
-    } else if (sort_by == SortBy.NextWipe && descending == true) {
-      servers.sort((b, a) => a.next_wipe.compareTo(b.next_wipe));
-    } else if (sort_by == SortBy.NextWipe && descending == false) {
-      servers.sort((a, b) => a.next_wipe.compareTo(b.next_wipe));
-    }
-    setState(() {});
-  }
-
   Widget SortByWidget() {
     return ListView(
       shrinkWrap: true,
@@ -340,7 +390,7 @@ class _AddNewServerState extends State<AddNewServer> {
                 setState(() {
                   sort_by = newValue!;
                 });
-                sort_servers();
+                context.read<SearchServersProvider>().sort_servers(sort_by, descending, hide_non_wiping_servers);
               },
               items: SortBy.values.map<DropdownMenuItem<SortBy>>((SortBy value) {
                 return DropdownMenuItem<SortBy>(
@@ -362,7 +412,7 @@ class _AddNewServerState extends State<AddNewServer> {
                     setState(() {
                       descending = !descending;
                     });
-                    sort_servers();
+                    context.read<SearchServersProvider>().sort_servers(sort_by, descending, hide_non_wiping_servers);
                   },
                 ),
                 Text(
@@ -372,7 +422,27 @@ class _AddNewServerState extends State<AddNewServer> {
               ],
             ),
           ],
-        )
+        ),
+        Divider(),
+        Row(
+          children: [
+            Checkbox(
+              checkColor: ColorManager().favorited,
+              fillColor: MaterialStateProperty.all(ColorManager().accent),
+              value: hide_non_wiping_servers,
+              onChanged: (bool? value) {
+                setState(() {
+                  hide_non_wiping_servers = !hide_non_wiping_servers;
+                });
+                context.read<SearchServersProvider>().sort_servers(sort_by, descending, hide_non_wiping_servers);
+              },
+            ),
+            Text(
+              'hide non-wiping servers',
+              style: TextStyle(color: ColorManager().accent, fontFamily: "BebasNeue", fontSize: 15.sp),
+            ),
+          ],
+        ),
       ],
     );
   }

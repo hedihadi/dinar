@@ -33,8 +33,9 @@ import 'package:timeago/timeago.dart' as timeago;
 import 'package:flutter_tags/flutter_tags.dart';
 
 class MyServer extends StatefulWidget {
-  MyServer({Key? key, required this.server}) : super(key: key);
+  MyServer({Key? key, this.enable_animation = true, required this.server}) : super(key: key);
   Server server;
+  bool enable_animation;
   @override
   State<MyServer> createState() => _MyServerState();
 }
@@ -44,33 +45,32 @@ class _MyServerState extends State<MyServer> {
   bool animate = true;
   bool animate_completed = false;
   @override
-  void dispose() {
-    super.dispose();
-  }
-
-  @override
   void initState() {
+    // TODO: implement initState
     super.initState();
+    animate_completed = !widget.enable_animation;
   }
 
   @override
   Widget build(BuildContext context) {
     if (lastupdate != widget.server.lastupdate) {
-      setState(() {
-        animate = false;
-        animate_completed = false;
-      });
-      Future.delayed(Duration(milliseconds: 250), () {
-        animate = true;
-        animate_completed = false;
+      if (widget.enable_animation) {
+        setState(() {
+          animate = false;
+          animate_completed = false;
+        });
+        Future.delayed(Duration(milliseconds: 250), () {
+          animate = true;
+          animate_completed = false;
 
-        lastupdate = widget.server.lastupdate;
-        if (this.mounted) {
-          setState(() {});
-        } else {
-          lastupdate = DateTime.now();
-        }
-      });
+          lastupdate = widget.server.lastupdate;
+          if (this.mounted) {
+            setState(() {});
+          } else {
+            lastupdate = DateTime.now();
+          }
+        });
+      }
     }
     return Padding(
       padding: EdgeInsets.all(10.sp),
@@ -87,7 +87,7 @@ class _MyServerState extends State<MyServer> {
                 Flexible(
                   flex: 5,
                   child: Text(
-                    "#${widget.server.rank} ${widget.server.name}",
+                    "#${widget.server.rank} ${widget.server.name} ${widget.server.next_wipe.compareTo(DateTime.now())}",
                     style: TextStyle(fontSize: 15.sp, color: Colors.white, fontFamily: "RobotoMono", fontWeight: FontWeight.w600),
                     textAlign: TextAlign.left,
                   ),

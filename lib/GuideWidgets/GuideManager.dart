@@ -23,9 +23,8 @@ class GuideManager {
       //padd: EdgeInsets.all(0),
 
       backgroundColor: HexColor("#222222"),
-      title: Text("Notifications?", style: TextStyle(color: Colors.amber), textAlign: TextAlign.center),
       content: SizedBox(
-        height: 60.h,
+        height: 50.h,
         width: 90.w,
         child: StatefulBuilder(
           builder: (context, setState) {

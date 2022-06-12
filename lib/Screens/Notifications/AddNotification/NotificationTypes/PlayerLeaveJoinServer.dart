@@ -6,7 +6,6 @@ import 'package:RustCompanion/Providers/ServersProvider.dart';
 import 'package:RustCompanion/Screens/Notifications/AddNotification/AddNotification_PlayerWidget.dart';
 import 'package:RustCompanion/Screens/Notifications/AddNotification/SelectServer.dart';
 import 'package:RustCompanion/Screens/Notifications/AddNotification/AddNotification_ServerWidget.dart';
-import 'package:RustCompanion/Screens/Servers/AddNewServer_Server.dart';
 import 'package:RustCompanion/utils/ColorManager.dart';
 import 'package:RustCompanion/utils/models.dart';
 import 'package:flutter/material.dart';
@@ -31,7 +30,7 @@ class _ServerWipesState extends State<PlayerLeaveJoinServer> {
     super.initState();
     RewardedAd.load(
         request: AdRequest(),
-        adUnitId: 'ca-app-pub-5924426514255017/5116978541',
+        adUnitId: 'ca-app-pub-3008670047597964/8132914304',
         rewardedAdLoadCallback: RewardedAdLoadCallback(
           onAdLoaded: (RewardedAd ad) {
             print('$ad loaded.');
@@ -125,17 +124,9 @@ class _ServerWipesState extends State<PlayerLeaveJoinServer> {
                       child: ElevatedButton(
                         onPressed: () async {
                           ad?.show(onUserEarnedReward: (AdWithoutView ad, RewardItem rewardItem) async {
-                                NotificationModel notification = widget.player_leave_or_join == PlayerLeaveOrJoin.Join
-                                    ? NotificationModel(NotificationType.PlayerJoinServer)
-                                    : NotificationModel(NotificationType.PlayerLeaveServer);
-                                final new_player_info = await ApiManager().getPlayerInfo(value.selected_player!.id);
-                                notification.player = new_player_info;
-                                notification.server = value.selected_server;
-                                if (new_player_info == null) {}
-                                context.read<NotificationsProvider>().add(notification);
-                                Navigator.pop(context);
+                                setNotification(value);
                               }) ??
-                              print("ad is null");
+                              setNotification(value);
                         },
                         child: Text("Add Notification"),
                         style: ButtonStyle(backgroundColor: MaterialStateProperty.all(ColorManager().accent)),
@@ -146,5 +137,17 @@ class _ServerWipesState extends State<PlayerLeaveJoinServer> {
         }),
       ],
     );
+  }
+
+  setNotification(value) async {
+    NotificationModel notification = widget.player_leave_or_join == PlayerLeaveOrJoin.Join
+        ? NotificationModel(NotificationType.PlayerJoinServer)
+        : NotificationModel(NotificationType.PlayerLeaveServer);
+    final new_player_info = await ApiManager().getPlayerInfo(value.selected_player!.id);
+    notification.player = new_player_info;
+    notification.server = value.selected_server;
+    if (new_player_info == null) {}
+    context.read<NotificationsProvider>().add(notification);
+    Navigator.pop(context);
   }
 }

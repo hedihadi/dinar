@@ -43,13 +43,15 @@ class SettingsScreen extends StatefulWidget {
 class _SettingsState extends State<SettingsScreen> {
   bool collect_data = false;
   bool debug = false;
+  double notification_frequency = 1;
   @override
   void initState() {
     super.initState();
     SharedPreferences.getInstance().then((prefs) {
       setState(() {
-        collect_data = prefs.getBool("collect_data")!;
-        debug = prefs.getBool("debug")!;
+        collect_data = prefs.getBool("collect_data") ?? true;
+        debug = prefs.getBool("debug") ?? false;
+        notification_frequency = prefs.getInt("notifications_frequency")?.toDouble() ?? 5;
       });
     });
   }
@@ -70,6 +72,53 @@ class _SettingsState extends State<SettingsScreen> {
         child: ListView(
           shrinkWrap: true,
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Flexible(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      RichText(
+                        text: TextSpan(
+                          text: "Notifications frequency",
+                          style: TextStyle(
+                              fontFamily: "Roboto", fontWeight: FontWeight.w500, color: Colors.grey[200], fontSize: 13.sp, letterSpacing: 1.sp),
+                        ),
+                      ),
+                      RichText(
+                        text: TextSpan(
+                          text:
+                              "the App will start itself and check for Notifications in background, how frequent do you want this to happen? a lower time means you'll be warned from events faster, but it uses more Battery life.",
+                          style: TextStyle(
+                              fontFamily: "Roboto", fontWeight: FontWeight.w500, color: Colors.grey[500], fontSize: 9.sp, letterSpacing: 1.sp),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            Slider(
+              activeColor: ColorManager().title,
+              inactiveColor: ColorManager().accent,
+              min: 1,
+              max: 120,
+              value: notification_frequency,
+              onChanged: (value) {
+                setState(() {
+                  notification_frequency = value;
+                });
+                SharedPreferences.getInstance().then((value) => value.setInt("notifications_frequency", notification_frequency.round()));
+              },
+            ),
+            Text(
+              "App will check for Notifications every ${notification_frequency.round()} minute(s)",
+              style: TextStyle(fontFamily: "Roboto", fontWeight: FontWeight.w500, color: ColorManager().title, fontSize: 10.sp),
+              textAlign: TextAlign.center,
+            ),
+            Divider(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
