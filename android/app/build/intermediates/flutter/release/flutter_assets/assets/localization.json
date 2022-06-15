@@ -1,0 +1,194 @@
+{
+    "US Dollars": {
+        "arabic": "دولار امریکی",
+        "kurdish": "دۆلاری ئەمریکی"
+    },
+    "Dollars": {
+        "arabic": "دولار",
+        "kurdish": "دۆلار"
+    },
+    "Iranian Toman": {
+        "arabic": "تمن ایرانی",
+        "kurdish": "تمەنی ئێرانی"
+    },
+    "Tomans": {
+        "arabic": "تمن",
+        "kurdish": "تمەن"
+    },
+    "Turkish Lira": {
+        "arabic": "لیرة ترکیة",
+        "kurdish": "لیرەی تورکی"
+    },
+    "Liras": {
+        "arabic": "لیرة",
+        "kurdish": "لیرە"
+    },
+    "Euro": {
+        "arabic": "اليورو",
+        "kurdish": "یۆرۆ"
+    },
+    "Euros": {
+        "arabic": "یورو",
+        "kurdish": "یۆرۆ"
+    },
+    "British Pound": {
+        "arabic": "الجنيه البريطاني",
+        "kurdish": "پاوەندی بەڕیتانی"
+    },
+    "Pounds": {
+        "arabic": "جنيه",
+        "kurdish": "پاوەند"
+    },
+    "an error occured, please make sure you have internet connection.": {
+        "arabic": "حدث خطأ ، يرجى التأكد من توفر اتصال بالإنترنت.",
+        "kurdish": "کێشەیەک ڕوویدا، تکایە دڵنیا ببەوە کە هێڵی ئینتەرنێتت هەیە."
+    },
+    "Dinars to": {
+        "arabic": "دینار الی",
+        "kurdish": "دینار بۆ"
+    },
+    "to Dinars": {
+        "arabic": "الی دینار",
+        "kurdish": "بۆ دینار"
+    },
+    "dollar": {
+        "arabic": "دولار",
+        "kurdish": "دۆلار"
+    },
+    "before": {
+        "arabic": "قبل",
+        "kurdish": "پێشتر"
+    },
+    "Dinars": {
+        "arabic": "دینار",
+        "kurdish": "دینار"
+    },
+    "Home": {
+        "arabic": "الصفحة الرئيسية",
+        "kurdish": "سەرەتا"
+    },
+    "Calculator": {
+        "arabic": "حاسبة",
+        "kurdish": "هەژمێر"
+    },
+    "Write a value": {
+        "arabic": "اکتب سعر",
+        "kurdish": "نرخێک بنووسە"
+    },
+    "Add": {
+        "arabic": "يضيف",
+        "kurdish": "زیادبکە"
+    },
+    "when value of ": {
+        "arabic": "عندما سعر",
+        "kurdish": "کە نرخی"
+    },
+    " becomes ": {
+        "arabic": " يصبح ",
+        "kurdish": " لە "
+    },
+    "or lower": {
+        "arabic": "او اقل",
+        "kurdish": "نزمتر بۆوە"
+    },
+    "higher": {
+        "arabic": "أعلى",
+        "kurdish": "بەرزتر بۆوە"
+    },
+    "you'll be notified": {
+        "arabic": "سيتم تحذيرك",
+        "kurdish": "ئاگادار دەکرێیتەوە"
+    },
+    "Currency Values": {
+        "arabic": "سعر العملات",
+        "kurdish": "نرخی دراوەکان"
+    },
+    "Add Event": {
+        "arabic": "إضافة حدث",
+        "kurdish": "ئاگادارکردنەوە دابنێ"
+    },
+    "Value of": {
+        "arabic": "قیمة ال",
+        "kurdish": "نرخی"
+    },
+    "in the last 30 days": {
+        "arabic": "في آخر 30 يومًا",
+        "kurdish": "لە ٣٠ ڕۆژی ڕابردوودا"
+    },
+    "Autostart is enabled": {
+        "arabic": "Autostart ممكّن",
+        "kurdish": "Autostart کارایە"
+    },
+    "please enable Autostart": {
+        "arabic": "يرجى التفعيل Autostart",
+        "kurdish": "تکایە Autostart کارا بکە بکە"
+    },
+    "please disable Battery Optimization": {
+        "arabic": "الرجاء تعطيل Battery Optimization",
+        "kurdish": "تکایە Battery Optimization ناکارا بکە"
+    },
+    "Battery Optimization is disabled": {
+        "arabic": "Battery Optimization غير نشط",
+        "kurdish": "Battery Optimization ناکارایە"
+    },
+    "Settings": {
+        "arabic": "إعدادات",
+        "kurdish": "ڕێکخستن"
+    },
+    "About": {
+        "arabic": "عن",
+        "kurdish": "دەربارە"
+    },
+    "we keep track of your behavior in the Application, to identify errors or which section has audience, to improve the Application.": {
+        "arabic": "نحن نتتبع سلوكك في التطبيق ، لتحديد الأخطاء أو أي قسم لديه جمهور ، لتحسين التطبيق.",
+        "kurdish": "ئێمە بەدواداچوون بۆ هەڵسوکەوتەکانت دەکەین لە ئەپلیکەیشنەکەدا، بۆ دیاریکردنی هەڵەکان یان کام بەش بینەری هەیە، بۆ باشترکردنی بەرنامەکە."
+    },
+    "Collect Data": {
+        "arabic": "اجمع بيانات",
+        "kurdish": "کۆکردنەوەی زانیاری"
+    },
+    "Language": {
+        "arabic": "اللغة",
+        "kurdish": "زمان"
+    },
+    "kurdish": {
+        "arabic": "کوردى",
+        "kurdish": "کوردی"
+    },
+    "arabic": {
+        "arabic": "عربی",
+        "kurdish": "عربی"
+    },
+    "english": {
+        "arabic": "English",
+        "kurdish": "English"
+    },
+    "text": {
+        "arabic": "",
+        "kurdish": ""
+    },
+    "text": {
+        "arabic": "",
+        "kurdish": ""
+    },
+    "text": {
+        "arabic": "",
+        "kurdish": ""
+    },
+    "text": {
+        "arabic": "",
+        "kurdish": ""
+    },
+    "text": {
+        "arabic": "",
+        "kurdish": ""
+    },
+    "text": {
+        "arabic": "",
+        "kurdish": ""
+    },
+    "text": {
+        "arabic": "",
+        "kurdish": ""
+    }
+}

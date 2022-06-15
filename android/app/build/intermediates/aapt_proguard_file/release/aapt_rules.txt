@@ -1,3 +1,4 @@
+-keep class android.app.Application { <init>(); }
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
@@ -23,11 +24,15 @@
 -keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.android.play.core.assetpacks.AssetPackExtractionService { <init>(); }
+-keep class com.google.android.play.core.assetpacks.ExtractionForegroundService { <init>(); }
+-keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
+-keep class com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity { <init>(); }
 -keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
--keep class com.hedihadi.rustcompanion.MainActivity { <init>(); }
+-keep class com.hedihadi.dinar.MainActivity { <init>(); }
 -keep class dev.fluttercommunity.plus.androidalarmmanager.AlarmBroadcastReceiver { <init>(); }
 -keep class dev.fluttercommunity.plus.androidalarmmanager.AlarmService { <init>(); }
 -keep class dev.fluttercommunity.plus.androidalarmmanager.RebootBroadcastReceiver { <init>(); }

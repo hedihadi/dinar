@@ -1,4 +1,4 @@
-# RustWipe
+# kurdcurrency
 
 A new Flutter project.
 

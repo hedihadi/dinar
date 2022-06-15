@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hedihadi.rustcompanion"
-    android:versionCode="1"
-    android:versionName="1.0.0" >
+    package="com.hedihadi.dinar"
+    android:versionCode="3"
+    android:versionName="2.0.1" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -11,6 +11,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <queries>
         <intent>
@@ -33,18 +34,20 @@
     </queries>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Permission will be merged into the manifest of the hosting app. -->
+    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
+        android:name="android.app.Application"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:icon="@mipmap/ic_launcher"
-        android:label="Rust Companion" >
+        android:label="Dinar - دینار" >
         <service
             android:name="eu.acme.service.FireBaseInstanceIdService"
             android:exported="false" >
@@ -70,7 +73,7 @@
         </receiver>
 
         <activity
-            android:name="com.hedihadi.rustcompanion.MainActivity"
+            android:name="com.hedihadi.dinar.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
@@ -84,7 +87,9 @@
                  while the Flutter UI initializes. After that, this theme continues
                  to determine the Window background behind the Flutter UI.
             -->
-
+            <meta-data
+                android:name="com.google.android.gms.ads.APPLICATION_ID"
+                android:value="ca-app-pub-5924426514255017~3558048622" />
             <meta-data
                 android:name="io.flutter.embedding.android.NormalTheme"
                 android:resource="@style/NormalTheme" />
@@ -114,7 +119,7 @@
             android:value="2" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3008670047597964~8516057685" />
+            android:value="ca-app-pub-3008670047597964~3310094359" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
@@ -177,7 +182,7 @@
 
         <provider
             android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-            android:authorities="com.hedihadi.rustcompanion.flutterfirebasemessaginginitprovider"
+            android:authorities="com.hedihadi.dinar.flutterfirebasemessaginginitprovider"
             android:exported="false"
             android:initOrder="99" />
 
@@ -203,6 +208,13 @@
         <meta-data
             android:name="io.flutter.embedded_views_preview"
             android:value="true" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -234,7 +246,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.hedihadi.rustcompanion.firebaseinitprovider"
+            android:authorities="com.hedihadi.dinar.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
@@ -276,7 +288,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.hedihadi.rustcompanion.mobileadsinitprovider"
+            android:authorities="com.hedihadi.dinar.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -291,7 +303,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.hedihadi.rustcompanion.androidx-startup"
+            android:authorities="com.hedihadi.dinar.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
@@ -302,7 +314,7 @@
         </provider>
         <provider
             android:name="androidx.work.impl.WorkManagerInitializer"
-            android:authorities="com.hedihadi.rustcompanion.workmanager-init"
+            android:authorities="com.hedihadi.dinar.workmanager-init"
             android:directBootAware="false"
             android:exported="false"
             android:multiprocess="true" />
@@ -386,6 +398,31 @@
 
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+        <activity
+            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+            android:enabled="false"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:process=":playcore_missing_splits_activity"
+            android:stateNotNeeded="true" />
+        <activity
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:enabled="false"
+            android:exported="false"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+        <service
+            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+            android:enabled="false"
+            android:exported="true" >
+            <meta-data
+                android:name="com.google.android.play.core.assetpacks.versionCode"
+                android:value="11000" />
+        </service>
+        <service
+            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+            android:enabled="false"
             android:exported="false" />
     </application>
 
