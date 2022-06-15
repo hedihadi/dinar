@@ -1,16 +1,12 @@
-# kurdcurrency
+## Dinar - دینار
+![dinar logo](https://github.com/hedihadi/dinar/raw/master/assets/images/ic_launcher.png)
 
-A new Flutter project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+###### it's production-ready for Android only! not tested on IOS as i don't have unlimited money to buy a  Mac and an Iphone.
+\
+\
+###### The application uses Firebase as the backend database.
+###### i have implemented a simple technique to reduce load on the database.
+![screenshot of my database](https://github.com/hedihadi/dinar/raw/master/assets/readme.png)
+###### in above image, there's a variable called "update", i randomly generate a new number and update this variable whenever i make a change to my database;
+###### and when the user opens the app, it checks if this variable is changed, if it's not changed then it simply uses the cached data.
