@@ -2,7 +2,6 @@
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
 -keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
 -keep class androidx.startup.InitializationProvider { <init>(); }
--keep class androidx.work.impl.WorkManagerInitializer { <init>(); }
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy { <init>(); }
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy { <init>(); }
 -keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy { <init>(); }
@@ -11,6 +10,8 @@
 -keep class androidx.work.impl.background.systemalarm.RescheduleReceiver { <init>(); }
 -keep class androidx.work.impl.background.systemalarm.SystemAlarmService { <init>(); }
 -keep class androidx.work.impl.background.systemjob.SystemJobService { <init>(); }
+-keep class androidx.work.impl.diagnostics.DiagnosticsReceiver { <init>(); }
+-keep class androidx.work.impl.foreground.SystemForegroundService { <init>(); }
 -keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
 -keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver { <init>(); }
 -keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver { <init>(); }
@@ -20,6 +21,7 @@
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class com.google.android.gms.ads.AdService { <init>(); }
 -keep class com.google.android.gms.ads.MobileAdsInitProvider { <init>(); }
+-keep class com.google.android.gms.ads.OutOfContextTestingActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
@@ -34,13 +36,8 @@
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
 -keep class com.hedihadi.dinar.MainActivity { <init>(); }
 -keep class dev.fluttercommunity.plus.androidalarmmanager.AlarmBroadcastReceiver { <init>(); }
--keep class dev.fluttercommunity.plus.androidalarmmanager.AlarmService { <init>(); }
 -keep class dev.fluttercommunity.plus.androidalarmmanager.RebootBroadcastReceiver { <init>(); }
 -keep class eu.acme.service.FireBaseInstanceIdService { <init>(); }
--keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService { <init>(); }
--keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider { <init>(); }
--keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver { <init>(); }
--keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService { <init>(); }
 -keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
 -keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
 
@@ -64,10 +61,6 @@
 
 -keep class androidx.appcompat.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
 
--keep class androidx.appcompat.widget.AppCompatCheckBox { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class androidx.appcompat.widget.AppCompatRadioButton { <init>(android.content.Context, android.util.AttributeSet); }
-
 -keep class androidx.appcompat.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class androidx.appcompat.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
@@ -86,59 +79,5 @@
 
 -keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(android.content.Context, android.util.AttributeSet); }
 
--keep class androidx.constraintlayout.widget.Barrier { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class androidx.constraintlayout.widget.Guideline { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
 -keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.afollestad.materialdialogs.color.FillGridView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.afollestad.materialdialogs.internal.MDButton { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.afollestad.materialdialogs.internal.MDRootLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.appbar.MaterialToolbar { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.button.MaterialButton { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.button.MaterialButtonToggleGroup { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.chip.Chip { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.chip.ChipGroup { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.datepicker.MaterialCalendarGridView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.internal.BaselineLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.internal.CheckableImageButton { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.internal.NavigationMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.internal.NavigationMenuView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.textfield.TextInputEditText { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.textfield.TextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.textview.MaterialTextView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.timepicker.ChipTextInputComboView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.timepicker.ClockFaceView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.timepicker.ClockHandView { <init>(android.content.Context, android.util.AttributeSet); }
-
--keep class com.google.android.material.timepicker.TimePickerView { <init>(android.content.Context, android.util.AttributeSet); }
 

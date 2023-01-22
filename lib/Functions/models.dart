@@ -1,44 +1,16 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-enum InitializeResponseType {
-  ///user has no internet, and local data is not available
-  no_internet,
+class NoLocalDataException implements Exception {}
 
-  ///user has internet
-  success,
+class NoInternetException implements Exception {}
 
-  ///user has no internet, but local data is available
-  success_no_internet,
+//this error will be thrown when user tries to get new data from database but user's data is already up-to--date
+class NoNewDataException implements Exception {}
 
-//process is still in loading state
-  loading,
-}
+enum AppState { Loading, NoInternet, Loaded }
 
-class Alarm {
-  late String databasename;
-  late String name;
-  late String type;
-  late double price;
-  late int id;
-  parse(Map<String, dynamic> data) {
-    databasename = data["databasename"];
-    name = data["name"];
-    type = data["type"];
-    price = data["price"];
-    id=data["id"];
-  }
-
-  toMap() {
-    Map<String, dynamic> data = {};
-    data["databasename"] = databasename;
-    data["name"] = name;
-    data["type"] = type;
-    data["price"] = price;
-    data["id"]=id;
-    return data;
-  }
-}
+enum SettingsData { OpenCalculatorOnStartup, RoundPrices, DarkTheme, UseEnglishNumbers }
 
 class Currency {
   ///[name] is the main name of the currency,

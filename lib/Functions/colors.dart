@@ -1,14 +1,23 @@
 import 'package:dinar/Functions/utils.dart';
 import 'package:flutter/material.dart';
 
-Color darkMainColor1 = HexColor("#111111");
-Color darkMainColor2 = HexColor("#222222");
-Color darkMainColor4 = HexColor("#444444");
-Color mainTextColor1 = Colors.white;
-Color mainTextColor2 = HexColor("#A69A82");
-Color secondaryTextColor1 = HexColor("#BDBDBD");
-Color secondaryTextColor2 = HexColor("#858585");
-Color backgroundColor1 = HexColor("#191914");
-Color backgroundColor2 = HexColor("#1e1e1a");
-Color borderColor = Colors.blue;
-Color dimColor = HexColor("#505050");
+extension CustomThemeDataExt on ThemeData {
+  Color get success {
+    if (brightness == Brightness.dark) {
+      return HexColor("#58c47a");
+    }
+    return HexColor('#07935e');
+  }
+  Color get calculatorCardColor {
+    if (brightness == Brightness.dark) {
+      return Colors.transparent;
+    }
+    return HexColor('#323c57');
+  }
+  Color get error {
+    if (brightness == Brightness.dark) {
+      return HexColor("#f26249");
+    }
+    return HexColor('#07935e');
+  }
+}

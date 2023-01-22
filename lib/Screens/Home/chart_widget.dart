@@ -1,11 +1,8 @@
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:dinar/Functions/data.dart';
 import 'package:dinar/Functions/models.dart';
 import 'package:dinar/Functions/utils.dart';
-import 'package:dinar/Screens/Home/currency_row.dart';
-import 'package:dinar/Screens/add_notification.dart';
-import 'package:dinar/Screens/chart.dart';
+import 'package:dinar/Screens/Home/chart.dart';
 
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';

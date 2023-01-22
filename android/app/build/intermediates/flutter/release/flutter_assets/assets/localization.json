@@ -163,32 +163,32 @@
         "arabic": "English",
         "kurdish": "English"
     },
-    "text": {
-        "arabic": "",
-        "kurdish": ""
+    "Common": {
+        "arabic": "مشترك",
+        "kurdish": "گشتی"
     },
-    "text": {
-        "arabic": "",
-        "kurdish": ""
+    "Change Language": {
+        "arabic": "تغيير اللغة",
+        "kurdish": "گۆڕینی زمان"
     },
-    "text": {
-        "arabic": "",
-        "kurdish": ""
+    "open calculator on startup": {
+        "arabic": "افتح الحاسبة عند بدء التشغيل",
+        "kurdish": "لەدوای کردنەوەی ئەپلیکەیشن هەژمێر بکەوە"
     },
-    "text": {
-        "arabic": "",
-        "kurdish": ""
+    "round up numbers": {
+        "arabic": "تقريب الأرقام",
+        "kurdish": "ژمارەکان نزیک بکەوە"
     },
-    "text": {
-        "arabic": "",
-        "kurdish": ""
+    "use english numbers": {
+        "arabic": "استخدم الأرقام الإنجليزية",
+        "kurdish": "ژمارەی ئینگلیزی بەکاربهێنە"
     },
-    "text": {
-        "arabic": "",
-        "kurdish": ""
+    "dark theme": {
+        "arabic": "مظهر داكن",
+        "kurdish": "ڕووکاری تاریک"
     },
-    "text": {
-        "arabic": "",
-        "kurdish": ""
+    "about": {
+        "arabic": "عن",
+        "kurdish": "دەربارە"
     }
 }

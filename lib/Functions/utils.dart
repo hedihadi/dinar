@@ -1,6 +1,11 @@
+import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
+import 'dart:ui';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:dinar/Functions/get_it.dart';
+import 'package:dinar/Functions/models.dart';
 import 'package:dinar/Providers/localization_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
@@ -9,62 +14,28 @@ import 'package:sizer/sizer.dart';
 import 'package:timeago/timeago.dart';
 import 'package:intl/intl.dart' as intll;
 
-Widget tag(String text, Widget icon) {
-  return Container(
-    height: 4.h,
-    padding: EdgeInsets.symmetric(horizontal: 5.sp, vertical: 5.sp),
-    decoration: BoxDecoration(
-        color: HexColor("#8A6132"),
-        border: Border.all(
-          color: HexColor("#8A6132"),
-        ),
-        borderRadius: BorderRadius.all(Radius.circular(3.sp))),
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        icon,
-        icon.runtimeType == Container ? Container() : SizedBox(width: 3.w),
-        Text(text,
-            style: TextStyle(
-              fontFamily: "Roboto",
-              fontWeight: FontWeight.w500,
-              color: Colors.white,
-            )),
-      ],
-    ),
-  );
-}
-
-Widget tag_player(String text, Widget icon, background) {
-  return Container(
-    height: 4.h,
-    padding: EdgeInsets.symmetric(horizontal: 5.sp, vertical: 5.sp),
-    decoration: BoxDecoration(
-        color: background,
-        border: Border.all(
-          color: background,
-        ),
-        borderRadius: BorderRadius.all(Radius.circular(3.sp))),
-    child: Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        icon,
-        icon.runtimeType == Container ? Container() : SizedBox(width: 3.w),
-        Text(text,
-            style: TextStyle(
-              fontFamily: "Roboto",
-              fontWeight: FontWeight.w500,
-              color: Colors.white,
-            )),
-      ],
-    ),
-  );
-}
-
 calculateTextDirection(BuildContext context) {
   return context.read<LocalizationProvider>().language == "english" ? TextDirection.ltr : TextDirection.rtl;
+}
+
+localizePrice(String number, BuildContext context) {
+  if (context.read<LocalizationProvider>().language == "english") {
+    return number;
+  }
+  if (GetIt.instance<GlobalClass>().getSettings(SettingsData.UseEnglishNumbers) == true) {
+    return number;
+  }
+  number = number.replaceAll('0', "٠");
+  number = number.replaceAll('1', "١");
+  number = number.replaceAll('2', "٢");
+  number = number.replaceAll('3', "٣");
+  number = number.replaceAll('4', "٤");
+  number = number.replaceAll('5', "٥");
+  number = number.replaceAll('6', "٦");
+  number = number.replaceAll('7', "٧");
+  number = number.replaceAll('8', "٨");
+  number = number.replaceAll('9', "٩");
+  return number;
 }
 
 Future<bool> hasNetwork() async {
@@ -144,14 +115,124 @@ class CustomEnglish extends EnMessages {
   String wordSeparator() => ' ';
 }
 
-double dp(double val, int places) {
-  num mod = pow(10.0, places);
-  return ((val * mod).round().toDouble() / mod);
-}
-
 extension IntExtension on num {
   String formatCurrency() {
+    num number = this;
     final formatCurrency = intll.NumberFormat("#,##0.##");
-    return formatCurrency.format(this).toString();
+    if (GetIt.instance<GlobalClass>().getSettings(SettingsData.RoundPrices) == true) {
+      number = roundNumber(double.parse(this.toString()).toInt());
+    }
+    return formatCurrency.format(number).toString();
   }
+}
+
+int roundNumber(int number) {
+  int a = number % 250;
+
+  if (a > 0) {
+    return (number ~/ 250) * 250 + 250;
+  }
+
+  return number;
+}
+
+List<Currency> parseData(Map<String, dynamic> datas) {
+  List<Currency> data = [];
+  List<Price> prices = [];
+  for (var element in (datas)["iqdprices"].entries) {
+    Timestamp timestamp = Timestamp.fromMillisecondsSinceEpoch(int.parse(element.key));
+    Price dollarValue = Price(timestamp, element.value.toDouble());
+    prices.add(dollarValue);
+  }
+  prices.sort((b, a) => a.timestamp.compareTo(b.timestamp));
+  //add the price list to currency
+  Currency cu = Currency();
+  cu.color = Colors.green[400]!;
+  cu.flag = "assets/images/countries/us.webp";
+  cu.name = "US Dollars";
+  cu.suffix = "Dollars";
+  cu.prices = prices;
+  cu.baseAmount = "100";
+  cu.databaseName = "iqdprices";
+  cu.conversionFactor = 100;
+  data.add(cu);
+  //////////////////////////////////////////////
+  //////////////////////////////////////////////
+  prices = [];
+  for (var element in (datas)["tmanprices"].entries) {
+    Timestamp timestamp = Timestamp.fromMillisecondsSinceEpoch(int.parse(element.key));
+    Price dollarValue = Price(timestamp, element.value.toDouble());
+    prices.add(dollarValue);
+  }
+  prices.sort((b, a) => a.timestamp.compareTo(b.timestamp));
+  cu = Currency();
+  cu.color = Colors.yellow[400]!;
+  cu.flag = "assets/images/countries/iran.png";
+  cu.name = "Iranian Toman";
+  cu.suffix = "Tomans";
+  cu.prices = prices;
+  cu.databaseName = "tmanprice";
+  cu.baseAmount = "100,000";
+  cu.conversionFactor = 100000;
+  data.add(cu);
+  //////////////////////////////////////////////
+  //////////////////////////////////////////////
+  prices = [];
+  for (var element in (datas)["turkishprices"].entries) {
+    Timestamp timestamp = Timestamp.fromMillisecondsSinceEpoch(int.parse(element.key));
+    Price dollarValue = Price(timestamp, element.value.toDouble());
+    prices.add(dollarValue);
+  }
+  prices.sort((b, a) => a.timestamp.compareTo(b.timestamp));
+  cu = Currency();
+  cu.color = Colors.red[200]!;
+  cu.flag = "assets/images/countries/turkey.png";
+  cu.name = "Turkish Lira";
+  cu.suffix = "Liras";
+  cu.prices = prices;
+  cu.databaseName = "turkishprices";
+  cu.baseAmount = "100";
+  cu.conversionFactor = 100;
+  data.add(cu);
+  //////////////////////////////////////////////
+  //////////////////////////////////////////////
+  prices = [];
+  for (var element in (datas)["europrices"].entries) {
+    Timestamp timestamp = Timestamp.fromMillisecondsSinceEpoch(int.parse(element.key));
+    Price dollarValue = Price(timestamp, element.value.toDouble());
+    prices.add(dollarValue);
+  }
+  prices.sort((b, a) => a.timestamp.compareTo(b.timestamp));
+  cu = Currency();
+  cu.color = Colors.amber[400]!;
+  cu.flag = "assets/images/countries/europe.png";
+  cu.name = "Euro";
+  cu.suffix = "Euros";
+  cu.prices = prices;
+  cu.baseAmount = "100";
+  cu.databaseName = "europrices";
+  cu.conversionFactor = 100;
+  data.add(cu);
+  //////////////////////////////////////////////
+  //////////////////////////////////////////////
+  prices = [];
+  for (var element in (datas)["britishprices"].entries) {
+    Timestamp timestamp = Timestamp.fromMillisecondsSinceEpoch(int.parse(element.key));
+    Price dollarValue = Price(timestamp, element.value.toDouble());
+    prices.add(dollarValue);
+  }
+  prices.sort((b, a) => a.timestamp.compareTo(b.timestamp));
+
+  cu = Currency();
+  cu.color = Colors.amber[400]!;
+  cu.flag = "assets/images/countries/uk.webp";
+  cu.name = "British Pound";
+  cu.suffix = "Pounds";
+  cu.prices = prices;
+  cu.databaseName = "britishprices";
+  cu.baseAmount = "100";
+  cu.conversionFactor = 100;
+  data.add(cu);
+
+  return data;
 }

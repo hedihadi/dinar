@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/services.dart' show rootBundle;
@@ -33,6 +34,8 @@ class LocalizationProvider with ChangeNotifier {
   }
 
   changeLanguage(String lang) async {
+    FirebaseAnalytics.instance.logEvent(name: 'language_changed', parameters: {'language': lang});
+
     language = lang;
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setString("language", lang);
