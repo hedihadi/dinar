@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "702710432677",
+    "project_id": "dinar-3ef15",
+    "storage_bucket": "dinar-3ef15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702710432677:android:5eea83a701629801511e4c",
+        "android_client_info": {
+          "package_name": "com.hedihadi.dinar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk7wuzmF7k4Q_SwncGT3WeV0RhMfZJTVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702710432677:android:a58b24d05a799bb5511e4c",
+        "android_client_info": {
+          "package_name": "com.hedihadi.zal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk7wuzmF7k4Q_SwncGT3WeV0RhMfZJTVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
