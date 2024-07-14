@@ -22,26 +22,8 @@
         "appinvite_service": {
           "other_platform_oauth_client": []
         }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:702710432677:android:a58b24d05a799bb5511e4c",
-        "android_client_info": {
-          "package_name": "com.hedihadi.zal"
-        }
       },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCk7wuzmF7k4Q_SwncGT3WeV0RhMfZJTVk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
+      "admob_app_id": "ca-app-pub-5545344389727160~4561378069"
     }
   ],
   "configuration_version": "1"
