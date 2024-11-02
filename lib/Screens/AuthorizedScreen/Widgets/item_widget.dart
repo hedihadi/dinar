@@ -45,8 +45,7 @@ class ItemWidget extends ConsumerWidget {
                     Expanded(
                       child: Text(
                         item.text,
-                        style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                              fontSize: 10.sp,
+                        style: Theme.of(context).textTheme.titleMedium!.copyWith(
                               fontWeight: FontWeight.bold,
                             ),
                       ),
@@ -90,7 +89,7 @@ class ItemWidget extends ConsumerWidget {
                                 "دوێنێ: ${(item.entries?[1].value ?? 0).toPrice()} دینار",
                                 style: Theme.of(context).textTheme.titleMedium!.copyWith(
                                       color: Theme.of(context).colorScheme.tertiary,
-                                      fontSize: 8.sp,
+                                      fontSize: 8,
                                       fontWeight: FontWeight.bold,
                                     ),
                               ),

@@ -29,10 +29,16 @@ class ItemScreen extends ConsumerWidget {
     return items.when(
         data: (data) {
           //the item entry with the highest and lowest value
-          final highestEntry = data.reduce((current, next) => current.value > next.value ? current : next);
-          final lowestEntry = data.reduce((current, next) => current.value < next.value ? current : next);
-          double lowestEntryValue = lowestEntry.value.toDouble();
-          double highestEntryValue = highestEntry.value.toDouble();
+          ItemEntry? highestEntry;
+          ItemEntry? lowestEntry;
+          double? lowestEntryValue;
+          double? highestEntryValue;
+          if (data.length >= 2) {
+            highestEntry = data.reduce((current, next) => current.value > next.value ? current : next);
+            lowestEntry = data.reduce((current, next) => current.value < next.value ? current : next);
+            lowestEntryValue = lowestEntry.value.toDouble();
+            highestEntryValue = highestEntry.value.toDouble();
+          }
 
           final List<ChartData> chartData = data.map<ChartData>((e) => ChartData(e.createdAt, e.value.toDouble())).toList();
           return Directionality(
@@ -45,76 +51,83 @@ class ItemScreen extends ConsumerWidget {
                 ),
               ),
               body: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 4),
+                padding: EdgeInsets.symmetric(horizontal: 0.5.w, vertical: 1.h),
                 child: ListView(
                   children: [
-                    SizedBox(height: 2.h),
                     SizedBox(height: 2.h),
                     Card(
                       elevation: 0,
                       shadowColor: Colors.transparent,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'نرخی ${item.valueFactor.round().toPrice()} ${item.unitName} لە ${dateFrameEntries.firstWhere((e) => e['days'] == ref.watch(dateFrameProvider))['display']}',
-                            style: Theme.of(context).textTheme.titleMedium,
-                          ),
-                          const DateDropdown(),
-                          Text(
-                            'لە ${dateFrameEntries.firstWhere((e) => e['days'] == ref.watch(dateFrameProvider))['display']} بەرزترین نرخ ${highestEntry.value.toPrice()} بووە لە بەرواری ${DateFormat("yyyy-MM-dd").format(highestEntry.createdAt)}،',
-                            style: Theme.of(context).textTheme.labelSmall!.copyWith(color: Theme.of(context).colorScheme.tertiary),
-                            textAlign: TextAlign.start,
-                          ),
-                          Text(
-                            'وە نزم ترین نرخیش ${lowestEntry.value.toPrice()} بووە لە بەرواری ${DateFormat("yyyy-MM-dd").format(lowestEntry.createdAt)}.',
-                            style: Theme.of(context).textTheme.labelSmall!.copyWith(color: Theme.of(context).colorScheme.tertiary),
-                            textAlign: TextAlign.start,
-                          ),
-                          SfCartesianChart(
-                            plotAreaBorderWidth: 0,
-                            tooltipBehavior: TooltipBehavior(
-                              color: Theme.of(context).appBarTheme.backgroundColor,
-                              enable: true,
-                              builder: (data, point, series, pointIndex, seriesIndex) {
-                                return Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Text("بەروار: ${DateFormat('yyyy-MM-dd').format((point.x as DateTime))}"),
-                                    Text("نرخ: ${(point.y as double).toPrice()} دینار"),
-                                  ],
-                                );
-                              },
-                            ),
-                            primaryYAxis: NumericAxis(
-                                //interval: 250,
-                                minimum: lowestEntryValue - (lowestEntryValue * 0.01),
-                                maximum: highestEntryValue + (highestEntryValue * 0.01),
-                                maximumLabels: 2,
-                                labelStyle: Theme.of(context).textTheme.labelSmall!.copyWith(color: Theme.of(context).colorScheme.primary),
-                                labelFormat: '{value}',
-                                numberFormat: NumberFormat("#,###", "en_US"),
-                                axisLine: const AxisLine(width: 0),
-                                majorTickLines: const MajorTickLines(color: Colors.transparent)),
-                            primaryXAxis: DateTimeAxis(
-                                labelStyle: Theme.of(context).textTheme.labelSmall!.copyWith(color: Theme.of(context).colorScheme.primary),
-                                maximumLabels: 5,
-                                dateFormat: DateFormat.Md(),
-                                majorGridLines: const MajorGridLines(width: 0),
-                                majorTickLines: MajorTickLines(
-                                  color: Theme.of(context).colorScheme.secondary,
-                                )),
-                            series: <CartesianSeries>[
-                              // Renders line chart
-                              LineSeries<ChartData, DateTime>(
-                                  color: Theme.of(context).colorScheme.secondary,
-                                  markerSettings: const MarkerSettings(isVisible: true),
-                                  dataSource: chartData,
-                                  xValueMapper: (ChartData sales, _) => sales.date,
-                                  yValueMapper: (ChartData sales, _) => sales.value),
-                            ],
-                          ),
-                        ],
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 1.w),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            if (![lowestEntry, highestEntry].contains(null))
+                              Text(
+                                'نرخی ${item.valueFactor.round().toPrice()} ${item.unitName} لە ${dateFrameEntries.firstWhere((e) => e['days'] == ref.watch(dateFrameProvider))['display']}',
+                                style: Theme.of(context).textTheme.titleMedium,
+                              ),
+                            const DateDropdown(),
+                            if (![lowestEntry, highestEntry].contains(null))
+                              Text(
+                                'لە ${dateFrameEntries.firstWhere((e) => e['days'] == ref.watch(dateFrameProvider))['display']} بەرزترین نرخ ${highestEntry!.value.toPrice()} بووە لە بەرواری ${DateFormat("yyyy-MM-dd").format(highestEntry.createdAt)}،',
+                                style: Theme.of(context).textTheme.labelSmall!.copyWith(color: Theme.of(context).colorScheme.tertiary),
+                                textAlign: TextAlign.start,
+                              ),
+                            if (![lowestEntry, highestEntry].contains(null))
+                              Text(
+                                'وە نزم ترین نرخیش ${lowestEntry!.value.toPrice()} بووە لە بەرواری ${DateFormat("yyyy-MM-dd").format(lowestEntry.createdAt)}.',
+                                style: Theme.of(context).textTheme.labelSmall!.copyWith(color: Theme.of(context).colorScheme.tertiary),
+                                textAlign: TextAlign.start,
+                              ),
+                            if (![lowestEntry, highestEntry].contains(null))
+                              SfCartesianChart(
+                                plotAreaBorderWidth: 0,
+                                tooltipBehavior: TooltipBehavior(
+                                  color: Theme.of(context).appBarTheme.backgroundColor,
+                                  enable: true,
+                                  builder: (data, point, series, pointIndex, seriesIndex) {
+                                    return Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Text("بەروار: ${DateFormat('yyyy-MM-dd').format((point.x as DateTime))}"),
+                                        Text("نرخ: ${(point.y as double).toPrice()} دینار"),
+                                      ],
+                                    );
+                                  },
+                                ),
+                                primaryYAxis: NumericAxis(
+                                    //interval: 250,
+                                    minimum: lowestEntryValue! - (lowestEntryValue * 0.01),
+                                    maximum: highestEntryValue! + (highestEntryValue * 0.01),
+                                    maximumLabels: 2,
+                                    labelStyle: Theme.of(context).textTheme.labelSmall!.copyWith(color: Theme.of(context).colorScheme.primary),
+                                    labelFormat: '{value}',
+                                    numberFormat: NumberFormat("#,###", "en_US"),
+                                    axisLine: const AxisLine(width: 0),
+                                    majorTickLines: const MajorTickLines(color: Colors.transparent)),
+                                primaryXAxis: DateTimeAxis(
+                                    labelStyle: Theme.of(context).textTheme.labelSmall!.copyWith(color: Theme.of(context).colorScheme.primary),
+                                    maximumLabels: 5,
+                                    dateFormat: DateFormat.Md(),
+                                    majorGridLines: const MajorGridLines(width: 0),
+                                    majorTickLines: MajorTickLines(
+                                      color: Theme.of(context).colorScheme.secondary,
+                                    )),
+                                series: <CartesianSeries>[
+                                  // Renders line chart
+                                  LineSeries<ChartData, DateTime>(
+                                      animationDuration: 0,
+                                      color: Theme.of(context).colorScheme.secondary,
+                                      markerSettings: const MarkerSettings(isVisible: false),
+                                      dataSource: chartData,
+                                      xValueMapper: (ChartData sales, _) => sales.date,
+                                      yValueMapper: (ChartData sales, _) => sales.value),
+                                ],
+                              ),
+                          ],
+                        ),
                       ),
                     ),
                   ],

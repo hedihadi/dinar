@@ -14,7 +14,6 @@ import 'package:hive/hive.dart';
 import 'package:loader_overlay/loader_overlay.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
-import 'package:sizer/sizer.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:stack_trace/stack_trace.dart' as stack_trace;
 import 'package:upgrader/upgrader.dart';
@@ -23,6 +22,7 @@ import 'package:dinar/Screens/MainScreen/main_screen.dart';
 import 'package:dinar/firebase_options.dart';
 import 'Functions/theme.dart';
 import 'package:timeago/timeago.dart' as timeago;
+import 'package:sizer/sizer.dart';
 
 final _revenueCatConfiguration = PurchasesConfiguration(Platform.isAndroid ? 'goog_LlCDPzDskVSBJhWpQvxdbuNsLFy' : 'appl_eqiIImrSxvAweggWipqxMOgYidj');
 Future<void> main() async {
